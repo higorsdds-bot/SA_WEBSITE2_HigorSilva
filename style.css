@@ -1,0 +1,79 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body{
+ background-color: #1e3b24;
+}
+
+/* parte principal da navbar */
+.Navbar { 
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ background-color: #3bb371;
+ padding: 15px 100px;
+ list-style: none;
+ border-radius: 7px;
+ border-bottom: 5px groove rgb(201, 10, 169);
+ box-shadow: 0px 5px 110px  rgb(247, 10, 203);
+}
+
+
+#nav-list {
+ font-size: 24px;
+ font-family: 'Honk', system-ui;
+}
+
+
+
+/* parte da lista da navbar */
+#nav-list {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;  
+    list-style: none; /* Removido a bola da lista */
+}
+
+
+/* parte do link da navbar */
+#nav-list a{
+    border-radius: 10px;
+    background-color: #3bb371d8;
+    padding: 5px 5px;
+    text-decoration: none; /* Remove a linha do link */
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgb(255, 60, 229);
+}
+
+
+/* parte do link da navbar quando o mouse passa por cima */
+#nav-list a:hover{
+    background-color: #be03c4;
+    color: #020202;
+    border: 15px solid #dd1ea4;
+    border-radius: 30px;
+    pointer-events: auto;
+    transition: 0.4s;
+}
+
+/*-------------------------------- Conteúdo da página inicial -------------------------- */
+
+
+#Titulo-geral{ font-family: 'Honk', system-ui;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+ /* inserir uma linha debaixo do título */
+
+#Titulo-geral {
+  text-decoration-line:underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #a12085;
+
+   text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
+   text-decoration-thickness: 10px;  /* consigo informa o tamanho da linha */ 
+}
+
