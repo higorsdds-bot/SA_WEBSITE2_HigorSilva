@@ -26,7 +26,7 @@ body{
 
 
 
-/* parte da lista da navbar */
+/* lista da navbar */
 #nav-list {
     display: flex;
     gap: 50px;
@@ -39,7 +39,7 @@ body{
 /* parte do link da navbar */
 #nav-list a{
     border-radius: 10px;
-    background-color: #3bb371d8;
+    background-color: #22c26ad8;
     padding: 5px 5px;
     text-decoration: none; /* Remove a linha do link */
     border-radius: 12px;
@@ -63,7 +63,7 @@ body{
 #Titulo-geral{ font-family: 'Honk', system-ui;
     font-size: 80px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
  /* inserir uma linha debaixo do título */
@@ -71,8 +71,8 @@ body{
 #Titulo-geral {
   text-decoration-line:underline;
   text-decoration-style: dotted;
-  text-decoration-color: #a12085;
-
+  text-decoration-color: #a12085; 
+  text-shadow: 0px 0px 30px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
    text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
    text-decoration-thickness: 10px;  /* consigo informa o tamanho da linha */ 
 }
