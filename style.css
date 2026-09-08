@@ -67,12 +67,12 @@ body{
 }
 
  /* inserir uma linha debaixo do título */
-
 #Titulo-geral {
   text-decoration-line:underline;
   text-decoration-style: dotted;
   text-decoration-color: #a12085; 
-  text-shadow: 0px 0px 30px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
+   
+   text-shadow: 0px 0px 30px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
    text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
    text-decoration-thickness: 10px;  /* consigo informa o tamanho da linha */ 
 }
