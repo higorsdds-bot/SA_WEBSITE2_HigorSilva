@@ -1,8 +1,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body{
- background-color: #1e3b24;
+ background-color: transparent;
 }
 
 /* parte principal da navbar */
@@ -77,3 +77,144 @@ body{
    text-decoration-thickness: 10px;  /* consigo informa o tamanho da linha */ 
 }
 
+/* aplicando grid  */
+
+.grid1 {
+display: grid;
+grid-template-columns: repeat(2, 2fr);
+grid-gap: 20px;
+padding: 10px 15px;
+margin-top: 30px;
+margin-bottom: 35px;
+
+}
+
+/* definição do meu card para os textos iniciais */
+
+#home {
+ background-color: #cc33ff;
+ padding: 10px 8px;
+ border-radius: 10px;
+ color: #1a1c94;
+ box-shadow: 0px 0px 15px #a12085;
+ text-shadow: #3415be;
+  border: 2px dotted #08080a27;
+}
+
+/*  Definido fonte - texto - tamanho */
+#home {
+ font-family: 'Poppins', System-ui;
+ text-align: center;
+ font-size: 18px;
+}
+
+/* cor após passar o mouse por cima */
+
+#home :hover {
+      background-color: #eb009c49;
+      font-size: 20px;
+      text-shadow: 0px 0px 5px #fdfdfd;
+      padding: 10px 8px;
+      border-radius: 10px;
+      color: #000000;
+}
+
+
+#Titulo-secundario {
+    font-family: 'Honk', system-ui;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 45px;
+}
+
+
+#Titulo-secundario {
+  text-decoration-line:underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #a12085; 
+   
+   text-shadow: 0px 0px 30px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
+   text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
+   text-decoration-thickness: 10px;  /* consigo informa o tamanho da linha */ 
+}
+    
+
+.grid2 {
+   display: grid;
+   grid-template-columns:repeat(3, 1fr);
+   gap:30px;
+}
+
+
+
+.video {
+    margin-top: 20px    ;
+    display: flex;
+    width: 650px;
+    max-width: 650px;
+    align-items: center;
+    margin-left: 100px;
+    background-color: #c02b76c5;
+    border: 3px solid #95329e88;
+    border-radius: 15px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.iframeID {
+    width: 650px;
+    height: 365px;
+    border: none;
+    border-radius: 25px;
+}
+
+
+.subtitulo-youtube { 
+    
+    margin-left: 160px;
+    font-family: 'Honk', system-ui;
+    text-decoration-line:underline;
+    text-decoration-style:solid;
+    text-decoration-color: #a12085; 
+    font-size: 28px;
+
+    text-shadow: 0px 0px 30px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
+    text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
+    text-decoration-thickness: 2px;  /* consigo informa o tamanho da linha */ 
+}
+
+
+
+#Terceiro-titulo-home { 
+ font-size: 35px;
+ margin-left: 100px;
+ font-family: 'Honk', system-ui;
+ text-shadow: 0px 0px 30px rgb(148, 35, 133);
+  
+ 
+}
+
+
+
+#lista-home {
+    
+    border: solid 5px #000000;
+    background-color: #800b67c4;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-right: 45px;
+    gap: 41px;
+    color: #3415be;   
+    border-radius: 10px;
+    
+}
+
+
+#lista-home {
+   
+    font-family: 'Poppins', System-ui;
+    font-size: 20px;
+    padding: 15px 20px;
+   
+}
