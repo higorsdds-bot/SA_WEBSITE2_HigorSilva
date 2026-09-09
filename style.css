@@ -1,21 +1,36 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body{
- background-color: transparent;
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
+
+body {
+    min-height: 100vh;
+
+    background-image: url("./img/Fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+   
+
 
 /* parte principal da navbar */
 .Navbar { 
+ opacity: 0.9;   
  display: flex;
  justify-content: flex-end;
  align-items: center;
- background-color: #3bb371;
+ background-color: #c02ec0;
  padding: 15px 100px;
  list-style: none;
  border-radius: 7px;
- border-bottom: 5px groove rgb(201, 10, 169);
- box-shadow: 0px 5px 110px  rgb(247, 10, 203);
+ box-shadow: 0px 10px 10px  rgb(19, 9, 17);
 }
 
 
@@ -28,6 +43,7 @@ body{
 
 /* lista da navbar */
 #nav-list {
+
     display: flex;
     gap: 50px;
     margin: 0;
@@ -38,20 +54,21 @@ body{
 
 /* parte do link da navbar */
 #nav-list a{
+    
     border-radius: 10px;
-    background-color: #22c26ad8;
+    background-color: #0a020ca2;
     padding: 5px 5px;
     text-decoration: none; /* Remove a linha do link */
     border-radius: 12px;
-    box-shadow: 0 6px 10px rgb(255, 60, 229);
+    box-shadow: 0 6px 10px rgb(17, 5, 16);
 }
 
 
 /* parte do link da navbar quando o mouse passa por cima */
 #nav-list a:hover{
-    background-color: #be03c4;
+   
     color: #020202;
-    border: 15px solid #dd1ea4;
+    border: 12px solid #dd1ea4;
     border-radius: 30px;
     pointer-events: auto;
     transition: 0.4s;
@@ -92,11 +109,12 @@ margin-bottom: 35px;
 /* definição do meu card para os textos iniciais */
 
 #home {
- background-color: #cc33ff;
+ opacity: 0.8;    
+ background-color: #9932CC;
  padding: 10px 8px;
  border-radius: 10px;
  color: #1a1c94;
- box-shadow: 0px 0px 15px #a12085;
+ box-shadow: 0px 10px 15px #130510;
  text-shadow: #3415be;
   border: 2px dotted #08080a27;
 }
@@ -111,7 +129,7 @@ margin-bottom: 35px;
 /* cor após passar o mouse por cima */
 
 #home :hover {
-      background-color: #eb009c49;
+      
       font-size: 20px;
       text-shadow: 0px 0px 5px #fdfdfd;
       padding: 10px 8px;
@@ -178,7 +196,7 @@ margin-bottom: 35px;
     text-decoration-color: #a12085; 
     font-size: 28px;
 
-    text-shadow: 0px 0px 30px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
+    text-shadow: 0px 10px 15px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
     text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
     text-decoration-thickness: 2px;  /* consigo informa o tamanho da linha */ 
 }
@@ -186,10 +204,14 @@ margin-bottom: 35px;
 
 
 #Terceiro-titulo-home { 
+  text-decoration-color: #a12085;   
+  text-decoration-line:underline;   
+  text-underline-offset: 10px; /* consigo dizer qual altura ele fica */
+  text-decoration-thickness: 1px;  /* consigo informa o tamanho da linha */ 
  font-size: 35px;
  margin-left: 100px;
  font-family: 'Honk', system-ui;
- text-shadow: 0px 0px 30px rgb(148, 35, 133);
+ text-shadow: 0px 10px 15px rgb(148, 35, 133);
   
  
 }
@@ -198,15 +220,15 @@ margin-bottom: 35px;
 
 #lista-home {
     
-    border: solid 5px #000000;
-    background-color: #800b67c4;
+    
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 48px;
     margin-right: 45px;
     gap: 41px;
-    color: #3415be;   
-    border-radius: 10px;
+    color: #f9f9ff;   
+    border-radius: 5px;
+    text-shadow: 0px 10px 10px #181117;
     
 }
 
