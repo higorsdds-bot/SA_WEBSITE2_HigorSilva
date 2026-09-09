@@ -355,7 +355,7 @@ body {
 
 .video {
     /* Espaço acima do vídeo */
-    margin-top: 20px;
+    margin-top: 40px;
 
     /* Ativa o Flexbox */
     display: flex;
@@ -370,17 +370,18 @@ body {
     /* Espaço à esquerda */
     margin-left: 100px;
 
-    /* Cor de fundo da caixa */
-    background-color: #c02b76c5;
-
-    /* Borda da caixa */
-    border: 3px solid #95329e88;
 
     /* Arredonda os cantos */
-    border-radius: 15px;
+    border-radius: 25px;
+
+    /* Largura do vídeo */
+    width: 642px;
+
+    /* Altura do vídeo */
+    height: 360px;
 
     /* Espaço entre a borda e o vídeo */
-    padding: 8px;
+    padding: 0px;
 
     /* Faz o tamanho considerar o padding e a borda */
     box-sizing: border-box;
@@ -400,11 +401,13 @@ body {
     /* Altura do vídeo */
     height: 365px;
 
-    /* Retira a borda padrão do iframe */
-    border: none;
+  
+    border: solid 4px ;
 
     /* Arredonda os cantos do vídeo */
     border-radius: 25px;
+
+    
 }
 
 
@@ -463,13 +466,15 @@ body {
     font-size: 35px;
 
     /* Espaço à esquerda */
-    margin-left: 100px;
+    margin-left: 180px;
 
     /* Fonte do título */
     font-family: 'Honk', system-ui;
 
     /* Sombra do título */
     text-shadow: 0px 10px 15px rgb(148, 35, 133);
+        
+    margin-top: 200px ;
 }
 
 
@@ -488,7 +493,7 @@ body {
     justify-content: center;
 
     /* Espaço acima */
-    margin-top: 48px;
+    margin-top: 30px;
 
     /* Espaço à direita */
     margin-right: 45px;
@@ -513,6 +518,10 @@ body {
 
     /* Espaçamento interno */
     padding: 15px 10px;
+
+    background-color: #9932CC;
+    opacity: 0.7;
+    box-shadow: 0px 0px 15px #000000;
 }
 
 
