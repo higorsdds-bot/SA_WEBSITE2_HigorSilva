@@ -1,242 +1,565 @@
+/* ============================================================
+   FONTES
+   Aqui estou importando as fontes que vou usar no site.
+   A fonte Honk será usada principalmente nos títulos e na navbar,
+   enquanto a Poppins será usada nos textos.
+   ============================================================ */
 
 @import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+/* ============================================================
+   BODY
+   Aqui estou tirando as margens e espaços padrões do navegador.
+   O min-height faz o body ocupar pelo menos a altura da tela.
+   ============================================================ */
 
 body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
-}
-
-body {
     min-height: 100vh;
 
+    /* Coloco a imagem como fundo da página */
     background-image: url("./img/Fundo.png");
+
+    /* Evita que a imagem fique se repetindo */
     background-repeat: no-repeat;
+
+    /* Faz a imagem ocupar o espaço disponível */
     background-size: cover;
+
+    /* Define a posição inicial da imagem */
     background-position: center top;
+
+    /* Mantém o fundo fixo enquanto a página rola */
     background-attachment: fixed;
 }
-   
 
 
-/* parte principal da navbar */
-.Navbar { 
- opacity: 0.9;   
- display: flex;
- justify-content: flex-end;
- align-items: center;
- background-color: #c02ec0;
- padding: 15px 100px;
- list-style: none;
- border-radius: 7px;
- box-shadow: 0px 10px 10px  rgb(19, 9, 17);
-}
+/* ============================================================
+   NAVBAR
+   Essa parte é responsável pela barra de navegação do site.
+   Estou organizando os elementos, colocando a cor de fundo,
+   espaçamento, bordas arredondadas e sombra.
+   ============================================================ */
 
+.Navbar {
+    opacity: 0.9;
 
-#nav-list {
- font-size: 24px;
- font-family: 'Honk', system-ui;
-}
-
-
-
-/* lista da navbar */
-#nav-list {
-
+    /* Ativa o Flexbox para organizar os elementos */
     display: flex;
-    gap: 50px;
-    margin: 0;
-    padding: 0;  
-    list-style: none; /* Removido a bola da lista */
+
+    /* Joga os itens para o lado direito */
+    justify-content: flex-end;
+
+    /* Alinha os itens verticalmente */
+    align-items: center;
+
+    /* Cor de fundo da navbar */
+    background-color: #c02ec0;
+
+    /* Espaçamento interno da navbar */
+    padding: 15px 100px;
+
+    /* Remove o estilo padrão de lista */
+    list-style: none;
+
+    /* Arredonda os cantos */
+    border-radius: 7px;
+
+    /* Adiciona uma sombra embaixo da navbar */
+    box-shadow: 0px 10px 10px rgb(19, 9, 17);
 }
 
 
-/* parte do link da navbar */
-#nav-list a{
-    
-    border-radius: 10px;
+/* ============================================================
+   LISTA DA NAVBAR
+   Aqui estou organizando os itens da lista que ficam dentro
+   da navbar. O Flexbox coloca os itens um ao lado do outro.
+   ============================================================ */
+
+#nav-list {
+    display: flex;
+
+    /* Espaço entre cada item da navbar */
+    gap: 50px;
+
+    /* Retira as margens e espaçamentos padrões da lista */
+    margin: 0;
+    padding: 0;
+
+    /* Remove as bolinhas da lista */
+    list-style: none;
+
+    /* Define o tamanho da fonte */
+    font-size: 24px;
+
+    /* Define a fonte da navbar */
+    font-family: 'Honk', system-ui;
+}
+
+
+/* ============================================================
+   LINKS DA NAVBAR
+   Aqui estou estilizando os links que ficam dentro da lista.
+   Estou colocando fundo, espaçamento, bordas arredondadas
+   e uma sombra.
+   ============================================================ */
+
+#nav-list a {
     background-color: #0a020ca2;
+
+    /* Espaçamento dentro do link */
     padding: 5px 5px;
-    text-decoration: none; /* Remove a linha do link */
+
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none;
+
+    /* Arredonda o fundo do link */
     border-radius: 12px;
+
+    /* Cria uma sombra atrás do link */
     box-shadow: 0 6px 10px rgb(17, 5, 16);
 }
 
 
-/* parte do link da navbar quando o mouse passa por cima */
-#nav-list a:hover{
-   
+/* ============================================================
+   HOVER DA NAVBAR
+   Essa parte funciona quando passo o mouse em cima do link.
+   O texto muda de cor e o botão ganha uma borda maior.
+   ============================================================ */
+
+#nav-list a:hover {
+    /* Muda a cor do texto */
     color: #020202;
+
+    /* Adiciona uma borda quando passa o mouse */
     border: 12px solid #dd1ea4;
+
+    /* Deixa a borda arredondada */
     border-radius: 30px;
+
+    /* Permite que o elemento receba interação do mouse */
     pointer-events: auto;
+
+    /* Faz a mudança acontecer de forma mais suave */
     transition: 0.4s;
 }
 
-/*-------------------------------- Conteúdo da página inicial -------------------------- */
 
+/* ============================================================
+   TÍTULO PRINCIPAL DA PÁGINA
+   Aqui estou configurando o primeiro título da página.
+   Ele fica centralizado, grande e usando a fonte Honk.
+   ============================================================ */
 
-#Titulo-geral{ font-family: 'Honk', system-ui;
-    font-size: 80px;
-    text-align: center;
-    margin-top: 45px;
-}
-
- /* inserir uma linha debaixo do título */
 #Titulo-geral {
-  text-decoration-line:underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #a12085; 
-   
-   text-shadow: 0px 0px 30px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
-   text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
-   text-decoration-thickness: 10px;  /* consigo informa o tamanho da linha */ 
+    font-family: 'Honk', system-ui;
+
+    /* Tamanho do título */
+    font-size: 80px;
+
+    /* Centraliza o texto */
+    text-align: center;
+
+    /* Espaço acima do título */
+    margin-top: 45px;
+
+    /* Cria uma linha pontilhada abaixo do título */
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #a12085;
+
+    /* Adiciona brilho/sombra no texto */
+    text-shadow: 0px 0px 30px rgb(148, 35, 133);
+
+    /* Define a distância entre o texto e a linha */
+    text-underline-offset: 15px;
+
+    /* Define a espessura da linha */
+    text-decoration-thickness: 10px;
 }
 
-/* aplicando grid  */
+
+/* ============================================================
+   GRID DOS CARDS INICIAIS
+   Aqui estou usando Grid para dividir essa parte da página
+   em duas colunas.
+   ============================================================ */
 
 .grid1 {
-display: grid;
-grid-template-columns: repeat(2, 2fr);
-grid-gap: 20px;
-padding: 10px 15px;
-margin-top: 30px;
-margin-bottom: 35px;
+    display: grid;
 
+    /* Cria duas colunas */
+    grid-template-columns: repeat(2, 2fr);
+
+    /* Espaço entre as colunas e linhas */
+    grid-gap: 20px;
+
+    /* Espaçamento interno */
+    padding: 10px 15px;
+
+    /* Espaço acima */
+    margin-top: 30px;
+
+    /* Espaço abaixo */
+    margin-bottom: 35px;
 }
 
-/* definição do meu card para os textos iniciais */
+
+/* ============================================================
+   CARD DE TEXTO DA HOME
+   Essa parte é responsável pela aparência dos cards de texto.
+   Estou colocando fundo, transparência, borda, sombra e cor.
+   ============================================================ */
 
 #home {
- opacity: 0.8;    
- background-color: #9932CC;
- padding: 10px 8px;
- border-radius: 10px;
- color: #1a1c94;
- box-shadow: 0px 10px 15px #130510;
- text-shadow: #3415be;
-  border: 2px dotted #08080a27;
+    opacity: 0.8;
+
+    /* Cor de fundo do card */
+    background-color: #9932CC;
+
+    /* Espaçamento interno */
+    padding: 10px 8px;
+
+    /* Arredonda os cantos */
+    border-radius: 10px;
+
+    /* Cor do texto */
+    color: #1a1c94;
+
+    /* Sombra do card */
+    box-shadow: 0px 10px 15px #130510;
+
+    /* Sombra no texto */
+    text-shadow: #3415be;
+
+    /* Borda pontilhada */
+    border: 2px dotted #08080a27;
+
+    /* Define a fonte do texto */
+    font-family: 'Poppins', System-ui;
+
+    /* Centraliza o texto */
+    text-align: center;
+
+    /* Define o tamanho da fonte */
+    font-size: 18px;
+
+
 }
 
-/*  Definido fonte - texto - tamanho */
-#home {
- font-family: 'Poppins', System-ui;
- text-align: center;
- font-size: 18px;
+
+/* ============================================================
+   HOVER DOS CARDS
+   Aqui defino o que acontece quando passo o mouse por cima
+   do conteúdo do card.
+   ============================================================ */
+
+#home:hover {
+    /* Aumenta um pouco o tamanho do texto */
+    font-size: 20px;
+
+    /* Adiciona uma sombra branca no texto */
+    text-shadow: 0px 0px 5px #fdfdfd;
+
+    /* Mantém o espaçamento interno */
+    padding: 10px 8px;
+
+    /* Mantém os cantos arredondados */
+    border-radius: 10px;
+
+    /* Muda a cor do texto para preto */
+    color: #000000;
 }
 
-/* cor após passar o mouse por cima */
 
-#home :hover {
-      
-      font-size: 20px;
-      text-shadow: 0px 0px 5px #fdfdfd;
-      padding: 10px 8px;
-      border-radius: 10px;
-      color: #000000;
-}
-
+/* ============================================================
+   TÍTULO SECUNDÁRIO
+   Essa parte é parecida com o título principal, mas estou
+   usando para o segundo título da página.
+   ============================================================ */
 
 #Titulo-secundario {
     font-family: 'Honk', system-ui;
+
+    /* Tamanho do título */
     font-size: 80px;
+
+    /* Centraliza o título */
     text-align: center;
+
+    /* Espaço acima */
     margin-top: 45px;
+
+    /* Linha abaixo do título */
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #a12085;
+
+    /* Sombra/brilho do texto */
+    text-shadow: 0px 0px 30px rgb(148, 35, 133);
+
+    /* Distância da linha para o texto */
+    text-underline-offset: 15px;
+
+    /* Espessura da linha */
+    text-decoration-thickness: 10px;
 }
 
 
-#Titulo-secundario {
-  text-decoration-line:underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #a12085; 
-   
-   text-shadow: 0px 0px 30px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
-   text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
-   text-decoration-thickness: 10px;  /* consigo informa o tamanho da linha */ 
-}
-    
+/* ============================================================
+   GRID DO VÍDEO E OUTROS CONTEÚDOS
+   Aqui estou criando uma estrutura em Grid para organizar
+   os elementos dessa parte da página.
+   ============================================================ */
 
 .grid2 {
-   display: grid;
-   grid-template-columns:repeat(3, 1fr);
-   gap:30px;
+    display: grid;
+
+    /* Divide o espaço em três colunas */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Cria espaço entre as colunas */
+    gap: 30px;
 }
 
 
+/* ============================================================
+   ÁREA DO VÍDEO
+   Aqui estou criando a caixa que fica em volta do vídeo.
+   Estou usando Flexbox para posicionar o iframe e também
+   colocando fundo, borda e cantos arredondados.
+   ============================================================ */
 
 .video {
-    margin-top: 20px    ;
+    /* Espaço acima do vídeo */
+    margin-top: 20px;
+
+    /* Ativa o Flexbox */
     display: flex;
+
+    /* Define a largura */
     width: 650px;
     max-width: 650px;
+
+    /* Alinha o conteúdo verticalmente */
     align-items: center;
+
+    /* Espaço à esquerda */
     margin-left: 100px;
+
+    /* Cor de fundo da caixa */
     background-color: #c02b76c5;
+
+    /* Borda da caixa */
     border: 3px solid #95329e88;
+
+    /* Arredonda os cantos */
     border-radius: 15px;
+
+    /* Espaço entre a borda e o vídeo */
     padding: 8px;
+
+    /* Faz o tamanho considerar o padding e a borda */
     box-sizing: border-box;
 }
 
+
+/* ============================================================
+   IFRAME DO YOUTUBE
+   Aqui estou definindo o tamanho e a aparência do iframe
+   onde o vídeo do YouTube será exibido.
+   ============================================================ */
+
 .iframeID {
+    /* Largura do vídeo */
     width: 650px;
+
+    /* Altura do vídeo */
     height: 365px;
+
+    /* Retira a borda padrão do iframe */
     border: none;
+
+    /* Arredonda os cantos do vídeo */
     border-radius: 25px;
 }
 
 
-.subtitulo-youtube { 
-    
+/* ============================================================
+   SUBTÍTULO DO YOUTUBE
+   Aqui estou estilizando o título que fica relacionado
+   ao vídeo do YouTube.
+   ============================================================ */
+
+.subtitulo-youtube {
+    /* Posiciona o subtítulo mais para a direita */
     margin-left: 160px;
+
+    /* Fonte usada no subtítulo */
     font-family: 'Honk', system-ui;
-    text-decoration-line:underline;
-    text-decoration-style:solid;
-    text-decoration-color: #a12085; 
+
+    /* Coloca uma linha abaixo do texto */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #a12085;
+
+    /* Tamanho do texto */
     font-size: 28px;
 
-    text-shadow: 0px 10px 15px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
-    text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
-    text-decoration-thickness: 2px;  /* consigo informa o tamanho da linha */ 
+    /* Sombra do texto */
+    text-shadow: 0px 10px 15px rgb(148, 35, 133);
+
+    /* Distância entre o texto e a linha */
+    text-underline-offset: 15px;
+
+    /* Espessura da linha */
+    text-decoration-thickness: 2px;
 }
 
 
+/* ============================================================
+   TERCEIRO TÍTULO DA HOME
+   Aqui estou estilizando outro título da página.
+   Ele também possui uma linha embaixo e uma sombra.
+   ============================================================ */
 
-#Terceiro-titulo-home { 
-  text-decoration-color: #a12085;   
-  text-decoration-line:underline;   
-  text-underline-offset: 10px; /* consigo dizer qual altura ele fica */
-  text-decoration-thickness: 1px;  /* consigo informa o tamanho da linha */ 
- font-size: 35px;
- margin-left: 100px;
- font-family: 'Honk', system-ui;
- text-shadow: 0px 10px 15px rgb(148, 35, 133);
-  
- 
+#Terceiro-titulo-home {
+    /* Cor da linha */
+    text-decoration-color: #a12085;
+
+    /* Cria a linha abaixo */
+    text-decoration-line: underline;
+
+    /* Distância entre o texto e a linha */
+    text-underline-offset: 10px;
+
+    /* Espessura da linha */
+    text-decoration-thickness: 1px;
+
+    /* Tamanho do título */
+    font-size: 35px;
+
+    /* Espaço à esquerda */
+    margin-left: 100px;
+
+    /* Fonte do título */
+    font-family: 'Honk', system-ui;
+
+    /* Sombra do título */
+    text-shadow: 0px 10px 15px rgb(148, 35, 133);
 }
 
 
+/* ============================================================
+   LISTA DA HOME
+   Aqui estou organizando a lista de diferenciais da página.
+   O Flexbox coloca os itens lado a lado e o gap cria espaço
+   entre eles.
+   ============================================================ */
 
 #lista-home {
-    
-    
+    /* Ativa o Flexbox */
     display: flex;
+
+    /* Centraliza os itens */
     justify-content: center;
+
+    /* Espaço acima */
     margin-top: 48px;
+
+    /* Espaço à direita */
     margin-right: 45px;
+
+    /* Espaço entre os itens */
     gap: 41px;
-    color: #f9f9ff;   
+
+    /* Cor dos textos */
+    color: #f9f9ff;
+
+    /* Arredonda os cantos */
     border-radius: 5px;
+
+    /* Sombra dos textos */
     text-shadow: 0px 10px 10px #181117;
-    
+
+    /* Define a fonte */
+    font-family: 'Poppins', System-ui;
+
+    /* Tamanho da fonte */
+    font-size: 18px;
+
+    /* Espaçamento interno */
+    padding: 15px 10px;
 }
 
 
-#lista-home {
-   
-    font-family: 'Poppins', System-ui;
-    font-size: 20px;
-    padding: 15px 20px;
-   
+/* ============================================================
+   FOOTER
+   Essa parte é responsável pelo rodapé do site.
+   Estou usando Flexbox para organizar os elementos e permitir
+   que eles quebrem de linha quando necessário.
+   ============================================================ */
+
+footer {
+    /* Deixa o footer um pouco transparente */
+    opacity: 0.8;
+
+    /* Fonte usada no footer */
+    font-family: 'Poppins', system-ui;
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /* Centraliza os elementos horizontalmente */
+    justify-content: center;
+
+    /* Alinha os elementos verticalmente */
+    align-items: center;
+
+    /* Permite que os elementos passem para outra linha */
+    flex-wrap: wrap;
+
+    /* Espaçamento interno */
+    padding: 10px 15px;
+
+    /* Espaço acima do footer */
+    margin-top: 50px;
+
+    /* Espaço horizontal entre os elementos */
+    column-gap: 40px;
+
+    /* Espaço vertical entre as linhas */
+    row-gap: 10px;
+
+    /* Tamanho do texto */
+    font-size: 14px;
+
+    /* Cor de fundo */
+    background-color: #a12085;
+
+    /* Cor do texto */
+    color: #0101d1;
+
+    /* Sombra do texto */
+    text-shadow: 0px 10px 15px #020202;
+
+    /* Arredonda os cantos do footer */
+    border-radius: 5px;
+}
+
+
+/* ============================================================
+   COPYRIGHT
+   Aqui estou configurando especificamente o texto de copyright.
+   O width de 100% faz ele ocupar uma linha inteira no footer.
+   ============================================================ */
+
+#copy {
+    /* Faz o copyright ocupar toda a largura disponível */
+    width: 100%;
+
+    /* Centraliza o texto */
+    text-align: center;
 }
