@@ -20,7 +20,7 @@ body {
     min-height: 100vh;
 
     /* Coloco a imagem como fundo da página */
-    background-image: url("./img/Fundo.png");
+    background-image: url("./img/Camping.png");
 
     /* Evita que a imagem fique se repetindo */
     background-repeat: no-repeat;
@@ -143,7 +143,26 @@ body {
     pointer-events: auto;
 
     /* Faz a mudança acontecer de forma mais suave */
-    transition: 0.4s;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid1 {
+    animation: entrarCard 1s ease-out forwards;
+}
+
+
+
+
+@keyframes entrarCard {
+    from {
+        transform: translateY(10%) translateX(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 
@@ -271,6 +290,8 @@ body {
 
     /* Muda a cor do texto para preto */
     color: #000000;
+
+    transition: all 0.2s ease-in-out;
 }
 
 
@@ -525,7 +546,7 @@ footer {
     padding: 10px 15px;
 
     /* Espaço acima do footer */
-    margin-top: 50px;
+    margin-top: 300px;
 
     /* Espaço horizontal entre os elementos */
     column-gap: 40px;
@@ -534,16 +555,16 @@ footer {
     row-gap: 10px;
 
     /* Tamanho do texto */
-    font-size: 14px;
+    font-size: 16px;
 
     /* Cor de fundo */
     background-color: #a12085;
 
     /* Cor do texto */
-    color: #0101d1;
+    color: #efefff;
 
     /* Sombra do texto */
-    text-shadow: 0px 10px 15px #020202;
+   text-shadow: 0px 0px 0px#3a023a;
 
     /* Arredonda os cantos do footer */
     border-radius: 5px;
