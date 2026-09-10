@@ -611,7 +611,7 @@ footer {
   opacity: 0.7;
 }
 .mesa .card:hover {
-  transform: scale(1.3) translateY(-20px);
+  transform: scale(1.3) translateY(20px);
   z-index: 10;
 }
 
@@ -621,6 +621,87 @@ background-color: #3415be;
 transform:rotate3d(0, 1, 0, 160deg);
 transition: 1s;
 
+/*  --------- ICONE position----------- */
 
- 
+}
+/* PERGUNTA */
+.mensagem {
+    position: fixed;
+    top: 670px;
+    bottom: 110px;
+    left: 1640px;
+    width: 180px;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeSlideIn 1.5s ease forwards;
+    animation-delay: 0s;
+}
+.mensagem .pergunta {
+    width: 100%;
+    height: auto;
+}
+
+/* PERSONAGEM */
+.emote {
+    position: fixed;
+    bottom: 20px;
+    left: 1640px;
+    width: 120px;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeSlideIn 2.5s ease forwards;
+    animation-delay: 1s;
+}
+.emote img {
+    width: 100%;
+    height: auto;
+}
+
+/* HOVER DO PERSONAGEM */
+.emote .hover {
+    display: none;
+}
+.emote:hover .normal {
+    display: none;
+}
+.emote:hover .hover {
+    display: block;
+}
+
+/* HOVER DO NÃO TROCA O EMOTE */
+.respostas:has(#nao:hover) ~ .emote .normal {
+    display: none;
+}
+.respostas:has(#nao:hover) ~ .emote .hover {
+    display: block;
+}
+
+/* SIM / NÃO */
+.respostas {
+    position: fixed;
+    bottom: 30px;
+    left: 1640px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeSlideIn 0.5s ease forwards;
+    animation-delay: 3s;
+}
+.respostas img {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* ANIMAÇÃO BASE */
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
