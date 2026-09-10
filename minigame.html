@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Minigame</title>
+</head>
+<body>
+    <div class="mesa">
+        <div class="card" data-som="0"></div>
+        <div class="card" data-som="1"></div>
+        <div class="card" data-som="2"></div>
+        <div class="card" data-som="3"></div>
+        <div class="card" data-som="5"></div>
+        <div class="card" data-som="6"></div>
+        <div class="card" data-som="7"></div>
+        <div class="card" data-som="8"></div>
+        <div class="card" data-som="9"></div>
+        <div class="card" data-som="10"></div>
+        <div class="card" data-som="11"></div>
+        <div class="card" data-som="12"></div>
+    </div>
+
+    <div class="mesa">
+            <div class="card" data-som="0"></div>
+            <div class="card" data-som="1"></div>
+            <div class="card" data-som="2"></div>
+            <div class="card" data-som="3"></div>
+            <div class="card" data-som="5"></div>
+            <div class="card" data-som="6"></div>
+            <div class="card" data-som="7"></div>
+            <div class="card" data-som="8"></div>
+            <div class="card" data-som="9"></div>
+            <div class="card" data-som="10"></div>
+            <div class="card" data-som="11"></div>
+            <div class="card" data-som="12"></div>
+    </div>
+
+
+    <!-- som bloqueado por hora -->
+<!-- 
+    <audio id="som-base" src="./audio.mp3" preload="auto"></audio>
+
+    <script>
+
+function tocarAnimacao() {
+    const mesa = document.querySelector('.mesa');
+    mesa.classList.remove('animar');
+    void mesa.offsetWidth; // força o navegador "recalcular" pra reiniciar
+    mesa.classList.add('animar');
+}
+
+        // Som base - muda o tom conforme a posição do card
+        const audio = document.getElementById('som-base');
+        let podeTocar = false;
+
+        // Libera o som no primeiro clique (regra do navegador)
+        document.addEventListener('click', () => {
+            podeTocar = true;
+            audio.play().then(() => {
+                audio.pause();
+                audio.currentTime = 0;
+            }).catch(() => {});
+        }, { once: true });
+
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                if (!podeTocar) return;
+
+                // Pega o tom do card - cada card um tom diferente
+                const tom = 0.8 + (parseInt(card.dataset.som) * 0.15);
+                audio.pause();
+                audio.currentTime = 0;
+                audio.playbackRate = tom;
+                audio.play().catch(() => {});
+            });
+        });
+    </script> -->
+</body>
+</html>
