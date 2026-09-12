@@ -169,10 +169,12 @@ font-family:'Poppins', sans-serif;
 
 
 
-
-
-
-
-
-
-
+#iframeid {
+    display: block;
+    margin: 40px auto;
+    width: 90%;        /* ocupa 90% da largura disponível */
+    max-width: 560px;  /* mas nunca passa de 560px */
+    aspect-ratio: 16 / 9; /* mantém a proporção do YouTube automaticamente */
+    height: auto;      /* a altura se ajusta sozinha */
+   border-radius: 15px;
+}
