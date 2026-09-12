@@ -1,79 +1,156 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url( "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body{
- background-color: #1e3b24;
-}
-
-/* parte principal da navbar */
-.Navbar { 
- display: flex;
- justify-content: flex-end;
- align-items: center;
- background-color: #3bb371;
- padding: 15px 100px;
- list-style: none;
- border-radius: 7px;
- border-bottom: 5px groove rgb(201, 10, 169);
- box-shadow: 0px 5px 110px  rgb(247, 10, 203);
-}
-
-
-#nav-list {
- font-size: 24px;
- font-family: 'Honk', system-ui;
+    *{
+    margin: 0px;
+    padding: 0px  
+    
 }
 
 
 
-/* lista da navbar */
-#nav-list {
-    display: flex;
-    gap: 50px;
+:root {
+    --primary: #9B111E;
+    --primary-dark: #5C0710;
+    --primary-light: #C72C41;
+    --black: #0B0B0B;
+    --black-soft: #151515;
+    --gray-dark: #222222;
+    --gray: #777777;
+    --black-rgb:rgb(17, 16, 16);
+    --white: #FFFFFF;
+    --white-soft: #F2F2F2;
+    --border: #303030;
+    --radius:15px;
+    --metal-gradient: linear-gradient( 180deg, #0a0a0a 0%, #3a3a3a 30%, #171717 50%, #4a4a4a 70%,   #0a0a0a 100% );
+    
+}
+
+body {
     margin: 0;
-    padding: 0;  
-    list-style: none; /* Removido a bola da lista */
+    padding: 0;
+    min-height: 100vh;
+
+    /* Coloco a imagem como fundo da página */
+    background-image: url("./img/Camping.png");
+
+    /* Evita que a imagem fique se repetindo */
+    background-repeat: no-repeat;
+
+    /* Faz a imagem ocupar o espaço disponível */
+    background-size: cover;
+
+    /* Define a posição inicial da imagem */
+    background-position: center top;
+
+    /* Mantém o fundo fixo enquanto a página rola */
+    background-attachment: fixed;
 }
 
 
-/* parte do link da navbar */
-#nav-list a{
-    border-radius: 10px;
-    background-color: #22c26ad8;
-    padding: 5px 5px;
-    text-decoration: none; /* Remove a linha do link */
-    border-radius: 12px;
-    box-shadow: 0 6px 10px rgb(255, 60, 229);
+.nav-items{
+display: flex;
+justify-content: center; /* Centraliza horizontalmente */
+align-items: center;     /* Centraliza verticalmente */
+background-color: var(--black);
+padding: 10px 10px;
+border-bottom: 2px solid var(--primary);
+box-shadow: 0px 0px 10px var(--primary-dark);
 }
 
 
-/* parte do link da navbar quando o mouse passa por cima */
-#nav-list a:hover{
-    background-color: #be03c4;
-    color: #020202;
-    border: 15px solid #dd1ea4;
-    border-radius: 30px;
-    pointer-events: auto;
-    transition: 0.4s;
+.Nav {
+    color:var(--white) ;
+    text-decoration: none;
+    margin-right: 90px; 
+    border-bottom: 2px solid var(--primary-dark);
+    border-left: 3px solid var(--primary-dark);
+    border-right: 3px solid var(--primary-dark);   
+    border-radius: var(--radius);
+    padding: 7px 7px;
+    background: var(--metal-gradient);
+} 
+
+
+.Nav:hover {
+ color: var(--primary-light);
+ text-shadow: 0px 0px 10px var(--primary);
 }
 
-/*-------------------------------- Conteúdo da página inicial -------------------------- */
 
+.bota-tudo{ 
+       display: flex;  
+       justify-content: center; 
+       align-items: flex-start; 
+       gap:30px
+       
 
-#Titulo-geral{ font-family: 'Honk', system-ui;
-    font-size: 80px;
-    text-align: center;
-    margin-top: 45px;
 }
 
- /* inserir uma linha debaixo do título */
 
-#Titulo-geral {
-  text-decoration-line:underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #a12085; 
-  text-shadow: 0px 0px 30px rgb(148, 35, 133); /* consigo aplicar efeito de sombra no meu texto*/
-   text-underline-offset: 15px; /* consigo dizer qual altura ele fica */
-   text-decoration-thickness: 10px;  /* consigo informa o tamanho da linha */ 
+
+.bloco {
+
+justify-content: center; /* centraliza os blocos na página */
+justify-self: center;
+flex-wrap: wrap;    /* quebra para a linha de baixo se não couber */
+background: var(--metal-gradient);
+border:2px solid #0a0a0a;
+margin-top: 50px;
+margin-left: 10px;
+margin-right: 10px;
+width: auto;
+height: auto ;
+padding: 10px 10px ;
+box-shadow: 0px 0px 25px var(--white);
+border-bottom-left-radius: 30px;
+border-top-right-radius: 30px;
+border-bottom-right-radius: 40px;
+border-top-left-radius: 40px;
+}
+
+
+/*  parte do card do texto  */
+ #primeira{
+ border-left: 2px solid #9B111E; 
+border-top-left-radius: 30px ;
+border-bottom-right-radius: 50px;
+border-right: 2px solid #9B111E;;
+}
+
+#segunda{
+     border-left: 2px solid #9B111E; 
+border-top-left-radius: 30px ;
+border-bottom-right-radius: 50px;
+border-right: 2px solid #9B111E;;
+}
+
+p { 
+    
+font-family:'Poppins', sans-serif;
+ padding: 10px 10px;
+ border-radius: 10px;
+ box-shadow: 15px;
+ background-color: var(--gray-dark);
+ color: var(--white);
+
+/* ------------------------------------ */
+
+ /* 
+   box-shadow:
+   -8px  = desloca a sombra pra ESQUERDA (por isso o sinal negativo)
+     0   = sem deslocamento vertical
+    10px = quanto maior, mais borrada/suave fica a sombra
+   rgba(0, 0, 0, 0.4) = cor PRETA com 40% de opacidade
+*/
+  box-shadow: -8px 0 10px rgba(0, 0, 0, 0.4);
+ 
+}
+
+
+.texto-2 {
+    margin-top: 100px;
 }
 
