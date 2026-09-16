@@ -5,229 +5,150 @@
 
     *{
     margin: 0px;
-    padding: 0px  
-    
-}
-
+    padding: 0px;  
+     
+    }
 
 
 :root {
-    --primary: #9B111E;
-    --primary-dark: #5C0710;
-    --primary-light: #C72C41;
-    --black: #0B0B0B;
-    --black-soft: #151515;
-    --gray-dark: #222222;
-    --gray: #777777;
-    --black-rgb:rgb(17, 16, 16);
+    --primary: #0A3DCE;
+    --primary-dark: #061E5C;
+    --primary-light: #3A7CFF;
+    --black: #070A14;
+    --black-soft: #101828;
+    --gray-dark: #1B2338;
+    --gray: #7A8BAE;
+    --black-rgb: rgb(10, 14, 28);
     --white: #FFFFFF;
-    --white-soft: #F2F2F2;
-    --border: #303030;
-    --radius:15px;
-    --metal-gradient: linear-gradient( 180deg, #0a0a0a 0%, #3a3a3a 30%, #171717 50%, #4a4a4a 70%,   #0a0a0a 100% );
-    
+    --white-soft: #EAF0FF;
+    --border: #24314F;
+    --radius: 15px;
+    --metal-gradient: linear-gradient(180deg, #070A14 0%, #1C2A4A 30%, #111B33 50%, #2A3D6B 70%, #070A14 100%);
+    --metal-gradient2: linear-gradient(180deg, #050A0F 0%, #123456 30%, #0A1E32 50%, #1A4B7A 70%, #050A0F 100%);
+    --fonte-texto: "Poppins", sans-serif;
+    --peso-baixo:300;
+    --peso-regular: 400;
+    --peso-bold: 700;
+    --cor-body: #050A0F;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+ body{
 
-    /* Coloco a imagem como fundo da página */
-    background-image: url("./img/Camping.png");
-
-    /* Evita que a imagem fique se repetindo */
-    background-repeat: no-repeat;
-
-    /* Faz a imagem ocupar o espaço disponível */
-    background-size: cover;
-
-    /* Define a posição inicial da imagem */
-    background-position: center top;
-
-    /* Mantém o fundo fixo enquanto a página rola */
-    background-attachment: fixed;
-}
-
-
-.nav-items{
-display: flex;
-justify-content: center; /* Centraliza horizontalmente */
-align-items: center;     /* Centraliza verticalmente */
-
-padding: 28px 28px;
-
-}
-
-
-.Nav {
-    color:var(--white) ;
-    text-decoration: none;
-    margin-right: 90px; 
-    border-bottom: 2px solid var(--primary-dark);
-    border-left: 3px solid var(--primary-dark);
-    border-right: 3px solid var(--primary-dark);   
-    border-radius: var(--radius);
-    padding: 7px 7px;
-    background: var(--metal-gradient);
-    opacity: 0.8;
-    font-size: 20px;
-transition: 1s;
+    /*overflow-x: hidden;*/
+ background-color: var(--cor-body);
 } 
 
 
-.Nav:hover {
-    font-size: 30px;
-    transition: 1s;
+.imagem{
 
-
-}
-
-
-.Nav:hover {
- color: var(--primary-light);
- text-shadow: 0px 0px 10px var(--primary);
-}
-
-
-
-
-
-
-.bota-tudo{ 
-       display: flex;  
-       justify-content: center; 
-       align-items: flex-start; 
-       gap:30px
-}
-
-
-
-.bloco {
-
-justify-content: center; /* centraliza os blocos na página */
-justify-self: center;
-flex-wrap: wrap;    /* quebra para a linha de baixo se não couber */
-border:2px solid #0a0a0a;
-margin-top: 50px;
-margin-left: 10px;
-margin-right: 10px;
-width: auto;
-height: auto ;
-padding: 10px 10px ;
-box-shadow: 0px 0px 25px var(--white);
-border-bottom-left-radius: 30px;
-border-top-right-radius: 30px;
-border-bottom-right-radius: 40px;
-border-top-left-radius: 40px;
-transition: 0.5s;
-}
-
-
-/*  parte do card do texto  */
- #primeira{
- border-left: 2px solid var(--white); 
-border-top-left-radius: 30px ;
+ position: absolute;
+ margin-left: 50px;
+ margin-top: 10px;
+ width: 30px;
+ height: 30px;
 
 }
 
-#segunda{
-     border-left: 2px solid var(--white); 
-     border-top-left-radius: 30px ;
-
-
+.user, span{
+position: absolute;
+ width: 30px;
+ height: 30px;
+ font-size: 50px;
+ color: var(--white-soft);
+display: flex;
+align-items: center;
+margin-top: 3px;
+margin-left: 490px;
 }
 
-#primeira, #segunda { 
-    
-font-family:'Poppins', sans-serif;
- padding: 10px 10px;
- border-radius: 30px;
- box-shadow: 15px;
- background-color: var(--gray-dark);
- color: var(--white);
-
-  box-shadow: -8px 0 10px rgba(0, 0, 0, 0.4);
+.traco {
+ display: flex;
+ border-right: 1px solid var(--border);
+ margin-left: -900px;
  
 }
 
 
-.texto-2 {
-    margin-top: 100px;
-}
 
 
 
-#iframeid {
-    display: block;
-    margin: 40px auto;
-    width: 90%;        /* ocupa 90% da largura disponível */
-    max-width: 560px;  /* mas nunca passa de 560px */
-    aspect-ratio: 16 / 9; /* mantém a proporção do YouTube automaticamente */
-    height: auto;      /* a altura se ajusta sozinha */
-   border-radius: 15px;
-}
-
-h2 {
-  color: var(--white);
-  background-color: var(--primary);
-  padding: 15px;
-  width: 250px;
-  border: 2px solid var(--white) ;
-  border-radius: var(--radius);
-  box-shadow: 0px 0px 15px var(--white);
-}
-
-.dados-festival {
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-}
-
-.lista-festival{
-    
-    border-radius: 30px;
-    background: var(--metal-gradient);
-    font-size: 18px;
-    color: var(--white-soft);
-    padding: 15px 15px;
-    width: 490px;
-    border-top:  solid 40px ;
-    border:  #C72C41;
-}
-
-.list{
- display: flex;
- margin-top: 40px;
-}
-
-
-.conteudo-video{
-
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    gap: 30px;
-    color: aqua;
-}
-
-
-
-
-
-footer {
-
-gap: 30px;
+.nav-items {
 display: flex;
 justify-content: center;
-align-items: center;
-color: #F2F2F2;
+background:var(--metal-gradient2);
+padding: 9px;
+gap:50px
 
 }
 
-footer {
-margin-top: 100px;
 
+.Nav, a { 
+font-family: var(--fonte-texto);  
+font-weight: var(--peso-regular);
+color: var(--white-soft);
+align-self: auto;
+text-decoration: none;
+background: var(--metal-gradient2);
+padding: 7px;
+border-radius: 9px;
+}
+
+
+
+a.Nav:hover {
+color: var(--white);
+align-self: auto;
+text-decoration: none;
+background: var(--metal-gradient);
+padding: 7px;
+border-radius: 9px;
+}
+
+
+
+
+.bota-tudo{
+
+ display: flex;
+flex-direction: column;
+margin-top: 30px;
+gap:30px;
+margin-left: 30px;
+margin-right: 30px;
+width: 700px; 
+}
+
+.bloco{ 
+    background: var(--metal-gradient);
+    border-bottom-right-radius: 50px;
+    border: 2px solid var(--primary-dark);
+    box-shadow: 0px 0px 15px var(--gray);
+    
+}
+
+.bloco, strong{
+    color: var(--black);
+    text-shadow: -1px -1px 4px #EAF0FF;
+}
+
+#primeira, #segunda {
+font-family: var(--fonte-texto);
+font-weight: var(--peso-regular);
+padding: 15px 15px;
+color: var(--white);
+display: flex;
+align-items: center;   /* display flex e align itens aplicam um efeito diferente no strong no card*/
+border-left: 10px solid var(--white-soft);
 
 }
 
+.foto-evento {
+  
+ position: absolute;
+ width: 500px;
+ height: 300px;
+ display: flex;
+ margin-left: 920px;
+ margin-top: -130px;
+
+}
