@@ -99,8 +99,6 @@ transition: 1s;
        justify-content: center; 
        align-items: flex-start; 
        gap:30px
-       
-
 }
 
 
@@ -135,12 +133,12 @@ border-top-left-radius: 30px ;
 
 #segunda{
      border-left: 2px solid var(--white); 
-border-top-left-radius: 30px ;
+     border-top-left-radius: 30px ;
 
 
 }
 
-p { 
+#primeira, #segunda { 
     
 font-family:'Poppins', sans-serif;
  padding: 10px 10px;
@@ -148,16 +146,7 @@ font-family:'Poppins', sans-serif;
  box-shadow: 15px;
  background-color: var(--gray-dark);
  color: var(--white);
- 
-/* ------------------------------------ */
 
- /* 
-   box-shadow:
-   -8px  = desloca a sombra pra ESQUERDA (por isso o sinal negativo)
-     0   = sem deslocamento vertical
-    10px = quanto maior, mais borrada/suave fica a sombra
-   rgba(0, 0, 0, 0.4) = cor PRETA com 40% de opacidade
-*/
   box-shadow: -8px 0 10px rgba(0, 0, 0, 0.4);
  
 }
@@ -178,3 +167,67 @@ font-family:'Poppins', sans-serif;
     height: auto;      /* a altura se ajusta sozinha */
    border-radius: 15px;
 }
+
+h2 {
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 15px;
+  width: 250px;
+  border: 2px solid var(--white) ;
+  border-radius: var(--radius);
+  box-shadow: 0px 0px 15px var(--white);
+}
+
+.dados-festival {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.lista-festival{
+    
+    border-radius: 30px;
+    background: var(--metal-gradient);
+    font-size: 18px;
+    color: var(--white-soft);
+    padding: 15px 15px;
+    width: 490px;
+    border-top:  solid 40px ;
+    border:  #C72C41;
+}
+
+.list{
+ display: flex;
+ margin-top: 40px;
+}
+
+
+.conteudo-video{
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 30px;
+    color: aqua;
+}
+
+
+
+
+
+footer {
+
+gap: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #F2F2F2;
+
+}
+
+footer {
+margin-top: 100px;
+
+
+}
+
