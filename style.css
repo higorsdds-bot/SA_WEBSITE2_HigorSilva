@@ -164,6 +164,13 @@ width: 700px;
     text-shadow: -1px -1px 4px #EAF0FF;
 }
 
+
+.bloco:hover {
+    transition: 2s;
+    transform: translate(50px, 15px)
+}
+
+
 #primeira, #segunda {
 font-family: var(--fonte-texto);
 font-weight: var(--peso-regular);
@@ -175,10 +182,6 @@ border-left: 10px solid var(--white-soft);
 
 }
 
-.bloco:hover {
-    transition: 2s;
-    transform: translate(50px, 15px)
-}
 
 
 .foto-evento {
@@ -210,3 +213,44 @@ h2 {
      text-shadow: -4px -2px 6px var(--white);
 }
 
+
+.bota-tudo-video
+
+{
+    margin-top: 180px;
+    margin-left: 80px;
+
+}
+
+h3 { 
+
+    margin-top: 280px;
+    color: var(--white);
+    width: 270px;
+    margin-left: 170px;
+    padding: 5px 5px;
+    text-shadow: -4px -2px 6px var(--white);
+}
+
+
+
+#iframeid {
+    position: absolute;
+    display: flex;
+    margin: 40px auto;
+    width: 90%;        /* ocupa 90% da largura disponível */
+    max-width: 560px;  /* mas nunca passa de 560px */
+    aspect-ratio: 16 / 9; /* mantém a proporção do YouTube automaticamente */
+    height: auto;      /* a altura se ajusta sozinha */
+    border-radius: 15px;
+    margin-right: 100px;
+}
+
+
+/* .chat-ficticio
+
+{
+  background-color: #0A3DCE;
+  width: 300px
+  he;
+} */
