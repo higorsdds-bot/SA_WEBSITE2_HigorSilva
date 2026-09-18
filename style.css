@@ -295,11 +295,157 @@ h3 {
     margin-right: 100px;
 }
 
+/* -------------------------------------------- */
 
-/* .chat-ficticio
+.cabecalho {
+ position: absolute;
+ background-color: var(--white-soft);
+ width: 420px;
+ height: 50px;
+ margin-top: 200px;
+ margin-left: 820px;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ border-bottom: 2px solid var(--black)
+ }
 
-{
-  background-color: #0A3DCE;
-  width: 300px
-  he;
-} */
+
+.informacao-top { font-family: var(--fonte-texto);
+    color: #111111;
+    margin-top: 10%;
+    font-size: 15px;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 43%;
+    cursor: pointer;
+    text-wrap: nowrap;   /* ao inves do texto empilhar consigo deixar ele lado a lado*/
+}
+
+.xis {
+ 
+position: absolute;
+margin-top: 415px;
+margin-left: 595px;
+color: var(--black);
+font-size: 25px;
+cursor: pointer;
+
+}
+
+.pontos { position:absolute;
+margin-top: 415px;
+margin-left: 570px;
+color: #061E5C;
+font-size: 25px;
+cursor: pointer;
+}
+
+.ph-crown{
+    color: var(--border-nav);
+}
+.coroa{
+color: var(--black);
+position:absolute;
+margin-top: 11.1%;
+margin-left: 1091px;
+font-size: 18px;
+gap: 7px;
+border: 1px solid var(--gray) ;
+width: 58px;
+height: 20px;
+padding: 3px;
+border-radius: 30px;
+}
+
+.coroa:hover {
+    background-color: #bfc7d8;
+    color: var(--white-soft);
+}
+
+.chat-ao-vivo {
+position: absolute;
+background-color: var(--white);
+width: 420px;
+height: 480px;
+margin-top: 200px;
+margin-left: 820px;
+border-radius: 30px;
+
+}
+
+.input-text{ 
+    
+    position: absolute;
+    background-color: var(--white-soft);
+    border-top: 2px solid var(--border);
+    width: 420px;
+    height: 50px;
+    margin-top: 430px;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px;
+}
+
+
+input {
+    position: relative;
+    font-family: var(--fonte-texto);
+    font-weight: var(--peso-regular);
+    font-size: 15px;
+    background-color: #fafafa;
+    margin-top: 6px;
+    width: 300px;
+    height: 25px;
+    border-radius: 30px;
+    padding: 5px;
+    margin-left: 10px;
+    border-color: #050A0F; 
+}
+
+
+
+.rosto {
+    color: var(--black);
+    position: absolute;
+    cursor: pointer;
+    margin-top: -76px;
+    margin-left: -270px;
+    font-size: 32px;
+     }
+
+.rosto,.diamante{
+
+    background-color: #dbdbdb;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+.diamante {
+
+    color: var(--black);
+    position: absolute;
+    cursor: pointer;
+    margin-top: -76px;
+    margin-left: -223px;
+    font-size: 32px;
+}
+
+
+ .btn-enviar {
+  background: transparent; 
+  border: none;
+  cursor: pointer;
+}
+
+.icone-enviar {
+    position: absolute;
+    color: var(--black-soft);
+    margin-top: -19px;
+    margin-left: -45px;
+    font-size: 28px;
+    
+}
+
+
+
+
+/* -------------------------------------------- */
