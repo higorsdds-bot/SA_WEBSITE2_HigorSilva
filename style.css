@@ -266,7 +266,7 @@ animation: animacaoTexto 3s alternate ease-in-out;
 .bota-tudo-video
 
 {
-    margin-top: -160px;
+    margin-top: 300px;
     margin-left: 80px;
 
 }
@@ -302,8 +302,8 @@ h3 {
  background-color: var(--white-soft);
  width: 420px;
  height: 50px;
- margin-top: 200px;
- margin-left: 820px;
+ margin-top: 1100px;
+ margin-left: 710px;
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
  border-bottom: 2px solid var(--black)
@@ -311,12 +311,12 @@ h3 {
 
 
 .informacao-top { font-family: var(--fonte-texto);
-    color: #111111;
-    margin-top: 10%;
+    color: var(--black);
+    margin-top: 57.5%;
     font-size: 15px;
     gap: 10px;
     padding: 20px;
-    margin-left: 43%;
+    margin-left: 710px;
     cursor: pointer;
     text-wrap: nowrap;   /* ao inves do texto empilhar consigo deixar ele lado a lado*/
 }
@@ -324,8 +324,8 @@ h3 {
 .xis {
  
 position: absolute;
-margin-top: 415px;
-margin-left: 595px;
+margin-top: 2220px;
+margin-left: 485px;
 color: var(--black);
 font-size: 25px;
 cursor: pointer;
@@ -333,8 +333,8 @@ cursor: pointer;
 }
 
 .pontos { position:absolute;
-margin-top: 415px;
-margin-left: 565px;
+margin-top:  2220px;;
+margin-left: 457px;
 color: #061E5C;
 font-size: 25px;
 cursor: pointer;
@@ -346,8 +346,8 @@ cursor: pointer;
 .coroa{
 color: var(--black);
 position:absolute;
-margin-top: 11.1%;
-margin-left: 1091px;
+margin-top: 58.7%;
+margin-left: 980px;
 font-size: 18px;
 gap: 7px;
 border: 1px solid var(--gray) ;
@@ -369,8 +369,8 @@ position: absolute;
 background-color: var(--white);
 width: 420px;
 height: 480px;
-margin-top: 200px;
-margin-left: 820px;
+margin-top: 1100px;
+margin-left: 710px;
 border-radius: 30px;
 
 }
