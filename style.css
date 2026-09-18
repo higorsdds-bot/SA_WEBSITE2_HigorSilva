@@ -334,7 +334,7 @@ cursor: pointer;
 
 .pontos { position:absolute;
 margin-top: 415px;
-margin-left: 570px;
+margin-left: 565px;
 color: #061E5C;
 font-size: 25px;
 cursor: pointer;
@@ -355,11 +355,13 @@ width: 58px;
 height: 20px;
 padding: 3px;
 border-radius: 30px;
+cursor: pointer;
 }
 
 .coroa:hover {
     background-color: #bfc7d8;
     color: var(--white-soft);
+   
 }
 
 .chat-ao-vivo {
@@ -403,7 +405,7 @@ input {
 
 
 
-.rosto {
+.coracao {
     color: var(--black);
     position: absolute;
     cursor: pointer;
@@ -412,11 +414,24 @@ input {
     font-size: 32px;
      }
 
-.rosto,.diamante{
+.coracao,.diamante{
 
     background-color: #dbdbdb;
     border-radius: 100%;
     padding: 2px;
+   
+}
+
+
+.coracao:hover
+{
+ color: #ce0707 ;
+ padding: 5px 5px 5px;
+}
+.diamante:hover{
+
+    color: #1A4B7A;
+     padding: 5px 5px 5px;
 }
 
 .diamante {
@@ -444,6 +459,7 @@ input {
     font-size: 28px;
     
 }
+
 
 
 
