@@ -1,0 +1,83 @@
+ @import url("https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url( "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+ *{
+    margin: 0px;
+    padding: 0px;  
+     
+    }
+
+
+    :root {
+    --primary: #0A3DCE;
+    --primary-dark: #061E5C;
+    --primary-light: #3A7CFF;
+    --black: #070A14;
+    --black-soft: #101828;
+    --gray-dark: #1B2338;
+    --gray: #7A8BAE;
+    --black-rgb: rgb(10, 14, 28);
+    --white: #FFFFFF;
+    --white-soft: #EAF0FF;
+    --border: #24314F;
+    --border-nav: #a78b0f ;
+    --background-nav: #f3cb1b;
+    --radius: 15px;
+    --metal-gradient: linear-gradient(180deg, #070A14 0%, #1C2A4A 30%, #111B33 50%, #2A3D6B 70%, #070A14 100%);
+    --metal-gradient2: linear-gradient(180deg, #050A0F 0%, #123456 30%, #0A1E32 50%, #1A4B7A 70%, #050A0F 100%);
+    --fonte-texto: "Poppins", sans-serif;
+    --peso-baixo:300;
+    --peso-regular: 400;
+    --peso-bold: 700;
+    --cor-body: #050A0F;
+
+}
+
+ .tabela-ingresso {
+  font-family: var(--fonte-texto);
+  border: solid 2px #ffffff;
+  margin-top: 20px;
+  width: auto;
+  height: 230px;
+  background: var(--metal-gradient);
+  border-radius: var(--radius);
+  box-shadow: 0px 0px 15px var(--background-nav);
+  /* padding: 15px; */
+
+ } 
+
+  .head-tabela{
+
+  font-family: var(--fonte-texto);
+  color: var(--background-nav);
+  text-shadow: -4px 4px 10px  var(--background-nav);
+ 
+}
+
+
+
+.head-tabelas
+
+{
+
+  font-size: 20px;
+  padding: 9px;
+  border: 1px solid var(--metal-gradient);
+  border-width: 1px;
+}
+
+
+  
+
+.informacao-tabelas { 
+  color: var(--white-soft);
+  padding: 10px;
+  border: 1px solid var(--border);;
+  border-width: 1px;
+  background-color: var(--);
+  text-shadow: -2px 3px 8px var(--white-soft);
+  font-size: 15px;
+}
+
+
