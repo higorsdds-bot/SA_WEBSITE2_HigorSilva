@@ -66,42 +66,42 @@
         </tr>
     </tbody>
 </table>
-</div>
+
 
  <section class="formulario">
   <h2 class=" Titulo-compra"> Compre seu ingresso</h2> 
-
+  <div class="formularios"> 
+            <div> 
               <form action="./Compra.html" >
                 <label for="Name"> NOME: </label>  
                 <input type="text"
                 id="Name"
                 placeholder="Informe seu nome">
-          
-
-                <label for=" RE"> RE </label>
+            </div>
+           
+            <div> 
+                <label for=" RE"> RE: </label>
                 <input type="Text"
                 id="RE"
                 placeholder="Se for aluno">
-
-                <br> 
-                <br>
-              
+           </div>
+          
+             <div> 
                    <label for="e-mail"> E-mail: </label>
                    <input type="text"
                    id="e-mail"
                     required
                     placeholder="Informe um e-mail">
-                
-            
+                  </div>
+             <div> 
+
             <label for="Idade" > IDADE: </label>  
               <input type="number"
                id="Idade"
                placeholder=" Informe sua idade"
                min="18"
                required>
-
-                <br>
-                <br>
+             </div>
 
 
             <label for="plano"> PLANO DESEJADO: </label>
@@ -112,17 +112,15 @@
             <option value="Universitário"> Universitário - 3 Dias -  Gratuito + Beneficios </option>
              </select>   
 
-             <input type="submit" value="Enviar">
-              
-            </form>
-
-    </form> 
-
-
-
+     </form>    
 
  </section>
+</div>
 
+<div class="botoes"> 
+ <input class="botao" type="submit" value="Enviar">
+ <input class="botao2" type="submit" value="Cancelar">
+</div>
 
 </div>
 </body>

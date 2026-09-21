@@ -31,7 +31,8 @@
     --peso-regular: 400;
     --peso-bold: 700;
     --cor-body: #050A0F;
-
+--cor-botao-cancelar:#990b0bb0;
+--cor-botao-enviar:#0d2697;
 }
 
 .nave-compra{
@@ -84,15 +85,15 @@
   
   font-family: var(--fonte-texto);
   border: solid 2px #ffffff;
-  margin-top: 20px;
+  margin-bottom: 450px;
   width: auto;
-  height: 230px;
+  height: auto;
   background: var(--metal-gradient);
   border-radius: var(--radius);
   box-shadow: 0px 0px 15px var(--background-nav);
   margin-top: 90px;
   margin-left: 55px;
-  /* padding: 15px; */
+
 
  } 
 
@@ -143,5 +144,111 @@
   margin-left: 120px;
   color: var(--background-nav);
   background: var(--metal-gradient);
-  width: 500px;
+  width: auto;
+  height: 470px ;
+  padding: 15px 15px;
+  font-family: var(--fonte-texto);
+  border: 1px solid var(--white-soft);
+  border-radius: 3%;
+  box-shadow: 0px 0px 15px var(--background-nav);
+}
+
+.formularios {
+  align-items: start;
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 350px;
+height: 450px;
+
+}
+
+.Titulo-compra {
+ margin-bottom: 30px;
+ display: flex;
+ justify-content: center;
+}
+
+
+input{
+  margin-top: 2px;
+  margin-left: 5px;
+  width: 200px;
+  height: 20px;
+  border-radius: 30px;
+  padding: 5px;
+  display: flex;
+ flex-direction: column;
+}
+
+
+
+#plano {
+
+margin-top: -10px;
+  width: 200px;
+  height: 30px;
+}
+
+.botao{
+   background-color: var(--cor-botao-enviar);
+    color: #ffffff;
+    font-family: var(--fonte-texto);
+    width: 130px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 17px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    line-height: 1.5;
+        border: 1px solid var(--white-soft);
+}
+.botao2{
+    background-color: var(--cor-botao-cancelar);
+    color: #ffffff;
+    font-family: var(--fonte-texto);
+    width: 130px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 17px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    line-height: 1.5;
+    border: 1px solid var(--white-soft);
+  }
+
+
+  .botao2:hover {
+  transform: scale(1.05);
+ background-color: #db3d57;
+
+}
+
+  .botao:hover {
+  transform: scale(1.05);
+ background-color: #4634e6;
+
+}
+
+
+.botoes {
+ margin-top: -17px;
+ display: flex;
+ width: auto;
+ height: auto;
+gap: 90px;
+margin-left: 76%;
+
 }
