@@ -4,74 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Beats Festival - Página Inicial</title>
-       <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="compra.css">
     <link rel="icon" href="./img/party.png">
-    </head>
+</head>
 <body>
 
+    
+
 <header> 
-
-    <img  class="imagem" src="./img/svg/summer-beats-original.svg" alt="simbolo">
+    <img class="imagem" src="./img/svg/summer-beats-original.svg" alt="simbolo">
     <nav class="nav-items">
-    <div class="traco"></div>
-    <a href="#" class="Nav"> Pagina Inicial</a>
-    <a href="#" class="Nav"> Galeria </a>
-   <span><i class="ph ph-user-circle user"></i></span>
-</nav> 
+        <div class="traco"></div>
+        <a href="#" class="Nav"> Pagina Inicial</a>
+        <a href="#" class="Nav"> Galeria </a>
+        <span><i class="ph ph-user-circle user"></i></span>
+    </nav> 
+</header> <!-- FECHAMENTO DO HEADER ADICIONADO AQUI -->
 
 
+<div class="nave-compra">
+ <span class="inicio"> Pagina inicial</span>
+  <span class="icone-seta"> <i class="ph ph-caret-right"></i>  </span>
+ <span class="compra">compra ingresso</span>
+</div>
+
+
+<div class="container-tabela">  
 <table class="tabela-ingresso">
- <thead class="head-tabela">            
-                    <tr> 
-                    <th class="head-tabelas">Item</th>
-                    <th class="head-tabelas">Descrição</th>
-                    <th class="head-tabelas">Duração/Data</th>
-                    <th class="head-tabelas">Valor/Investimento</th>
-                    </tr>
- </thead>
-            <tbody class="body-tabela">
-                <tr class="informacao-tabela">
-                    <div> 
-                    <td class="informacao-tabelas" >Ingresso Diário</td>
-                    <td class="informacao-tabelas">Acesso a um único dia de festival com todos os palcos e áreas comuns</td>
-                    <td class="informacao-tabelas">1 dia</td>
-                    <td class="informacao-tabelas">R$ 150,00</td>
-                    </div>
-                </tr>
-                <tr class="infomacao-tabela">
-                     <div class="informacao-tabela"> 
-                    <td class="informacao-tabelas">Passaporte 3 Dias</td>
-                    <td class="informacao-tabelas">Acesso completo aos três dias de evento, com direito a área VIP</td>
-                    <td class="informacao-tabelas">3 dias (15 a 17/01/2026)</td>
-                    <td class="informacao-tabelas">R$ 350,00</td>
-                    </div>
-                </tr>
-                <tr class="informacao-tabela">
-                    <div class="informacao-tabelas"> 
-                    <td class="informacao-tabelas" >Camping Universitário</td>
-                    <td class="informacao-tabelas" >Área de camping exclusiva para estudantes com banheiros e chuveiros</td>
-                    <td class="informacao-tabelas" >3 dias (15 a 17/01/2026)</td>
-                    <td class="informacao-tabelas">Gratuito com carteirinha</td>
-                    </div>
-                </tr>
-            </tbody>
-
-                     <tfoot> 
-                <!-- <tr>
-                    <td> SUMMER ELETRIC² </td>
-                </tr> -->
-            </tfoot>
-
-
+    <thead class="head-tabela">            
+        <tr> 
+            <th class="head-tabelas">Item</th>
+            <th class="head-tabelas">Descrição</th>
+            <th class="head-tabelas">Duração/Data</th>
+            <th class="head-tabelas">Valor/Investimento</th>
+        </tr>
+    </thead>
+    <tbody class="body-tabela">
+        <tr class="informacao-tabela">
+           
+            <td class="informacao-tabelas">Ingresso Diário</td>
+            <td class="informacao-tabelas">Acesso a um único dia de festival com todos os palcos e áreas comuns</td>
+            <td class="informacao-tabelas">1 dia</td>
+            <td class="informacao-tabelas">R$ 150,00</td>
+        </tr>
+        <tr class="informacao-tabela">
+            
+            <td class="informacao-tabelas">Passaporte 3 Dias</td>
+            <td class="informacao-tabelas">Acesso completo aos três dias de evento, com direito a área VIP</td>
+            <td class="informacao-tabelas">3 dias (15 a 17/01/2026)</td>
+            <td class="informacao-tabelas">R$ 350,00</td>
+        </tr>
+        <tr class="informacao-tabela">
+         
+            <td class="informacao-tabelas">Camping Universitário</td>
+            <td class="informacao-tabelas">Área de camping exclusiva para estudantes com banheiros e chuveiros</td>
+            <td class="informacao-tabelas">3 dias (15 a 17/01/2026)</td>
+            <td class="informacao-tabelas">Gratuito com carteirinha</td>
+        </tr>
+    </tbody>
 </table>
+</div>
+
+ <section class="formulario">
+  <h2 class=" Titulo-compra"> Compre seu ingresso</h2> 
+
+              <form action="./Compra.html" >
+                <label for="Name"> NOME: </label>  
+                <input type="text"
+                id="Name"
+                placeholder="Informe seu nome">
+          
+
+                <label for=" RE"> RE </label>
+                <input type="Text"
+                id="RE"
+                placeholder="Se for aluno">
+
+                <br> 
+                <br>
+              
+                   <label for="e-mail"> E-mail: </label>
+                   <input type="text"
+                   id="e-mail"
+                    required
+                    placeholder="Informe um e-mail">
+                
+            
+            <label for="Idade" > IDADE: </label>  
+              <input type="number"
+               id="Idade"
+               placeholder=" Informe sua idade"
+               min="18"
+               required>
+
+                <br>
+                <br>
+
+
+            <label for="plano"> PLANO DESEJADO: </label>
+            <select name="plano" id="plano">
+            <option value="Informe"> Informe uma opção</option>
+            <option value="Diario"> Diario - Valor: R$ 150,00 </option>
+            <option value=" PASSAPORTE"> Passaporte - 3 Dias - Valor: R$ 350,00 </option>
+            <option value="Universitário"> Universitário - 3 Dias -  Gratuito + Beneficios </option>
+             </select>   
+
+             <input type="submit" value="Enviar">
+              
+            </form>
+
+    </form> 
+
+
+
+
+ </section>
+
+
+</div>
+</body>
+</html>

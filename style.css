@@ -22,8 +22,8 @@
     --white: #FFFFFF;
     --white-soft: #EAF0FF;
     --border: #24314F;
-    --border-nav: #a78b0f ;
-    --background-nav: #f3cb1b;
+    --border-nav: #63099e ;
+    --background-nav: #b55bf1;
     --radius: 15px;
     --metal-gradient: linear-gradient(180deg, #070A14 0%, #1C2A4A 30%, #111B33 50%, #2A3D6B 70%, #070A14 100%);
     --metal-gradient2: linear-gradient(180deg, #050A0F 0%, #123456 30%, #0A1E32 50%, #1A4B7A 70%, #050A0F 100%);
@@ -34,12 +34,14 @@
     --cor-body: #050A0F;
 
 }
+body {
 
- body{
-
-    /*overflow-x: hidden;*/
- background-color: var(--cor-body);
-} 
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/a994e40f-4bc5-4246-a6f1-c25f0ebb2dc3.gif');
+   background-size: cover; 
+   background-position: center;      
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
 
 .localizacao-direcao{
  display: flex;
