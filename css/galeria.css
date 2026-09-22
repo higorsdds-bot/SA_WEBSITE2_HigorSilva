@@ -128,4 +128,12 @@
   .media-box {
     border-radius: 15px;
   }
+
+  .inicio,
+  .icone-seta,
+  .compra {
+    font-size: 0px;
+    margin-left: 8px;
+    margin-left: 30px;
+  }
 }

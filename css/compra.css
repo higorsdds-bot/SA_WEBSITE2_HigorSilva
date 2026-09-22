@@ -148,7 +148,7 @@
 .formulario {
   margin-top: 150px;
   margin-left: 120px;
-  background: var(--metal-gradient);
+  background-color: var(--border-nav);
   width: auto;
   height: 470px;
   padding: 15px 15px;
@@ -462,15 +462,15 @@ input:hover {
 }
 
 @media (max-width: 480px) {
-  .inicio {
-    font-size: 9px;
+  .inicio,
+  .icone-seta {
+    font-size: 0px;
     margin-left: 8px;
-    gap: 2px;
+    margin-left: 30px;
   }
 
   .compra {
-    font-size: 14px;
-    margin-left: 20px;
+    text-shadow: 4px 4px 10px var(--background-nav);
   }
 
   .tabela-ingresso {

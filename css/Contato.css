@@ -1,0 +1,208 @@
+:root {
+  --primary: #0a3dce;
+  --primary-dark: #061e5c;
+  --primary-light: #3a7cff;
+  --black: #070a14;
+  --black-soft: #101828;
+  --gray-dark: #1b2338;
+  --gray: #7a8bae;
+  --black-rgb: rgb(10, 14, 28);
+  --white: #ffffff;
+  --white-soft: #eaf0ff;
+  --border: #24314f;
+  --border-nav: #63099e;
+  --background-nav: #b55bf1;
+  --radius: 15px;
+  --metal-gradient: linear-gradient(
+    180deg,
+    #070a14 0%,
+    #1c2a4a 30%,
+    #111b33 50%,
+    #2a3d6b 70%,
+    #070a14 100%
+  );
+  --metal-gradient2: linear-gradient(
+    180deg,
+    #050a0f 0%,
+    #123456 30%,
+    #0a1e32 50%,
+    #1a4b7a 70%,
+    #050a0f 100%
+  );
+  --fonte-texto: "Poppins", sans-serif;
+  --peso-baixo: 300;
+  --peso-regular: 400;
+  --peso-bold: 700;
+  --cor-body: #050a0f;
+  --cor-botao-cancelar: #990b0bb0;
+  --cor-botao-enviar: #0d2697;
+}
+
+.card-icones {
+  display: flex;
+  gap: 300px;
+  margin-top: 50px;
+}
+
+.card-icones i {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.item-contato span {
+  font-size: 25px;
+  gap: 5px;
+}
+
+label {
+  display: flex;
+  margin-bottom: 5px;
+  color: var(--white-soft);
+}
+
+form {
+  display: flex;
+  font-family: var(--fonte-texto);
+  justify-self: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--border-nav);
+  width: 400px;
+  height: 600px;
+  margin-top: 100px;
+  padding: 15px 45px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top: 3px solid var(--background-nav);
+  box-shadow: -4px 4px 15px var(--background-nav);
+  border-bottom: 3px solid var(--background-nav);
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  opacity: 0.9;
+}
+
+input,
+textarea,
+select {
+  width: 300px;
+  padding: 5px 5px;
+  border-radius: 7px;
+  font-family: var(--fonte-texto);
+}
+
+.botao2:active {
+  animation: rubber-band 0.8s ease-in-out 0s 1 normal none;
+}
+
+.botao2 {
+  background-color: var(--cor-botao-enviar);
+  color: #ffffff;
+  font-family: var(--fonte-texto);
+  width: 130px;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  line-height: 1.5;
+  border: 1px solid var(--white-soft);
+  box-shadow: 0px 0px 15px var(--background-nav);
+  margin-left: 170px;
+}
+
+.footer {
+  margin-top: 90px;
+}
+
+@keyframes rubber-band {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  50% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+  65% {
+    transform: scaleX(0.95) scaleY(1.05);
+  }
+  75% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-icones {
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  .item-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .item-contato span {
+    font-size: 0px;
+  }
+
+  .card-icones i {
+    font-size: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-icones {
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .item-contato span {
+    font-size: 0px;
+  }
+
+  .card-icones i {
+    font-size: 18px;
+  }
+
+  form {
+    width: calc(100% - 20px);
+    padding: 12px 15px;
+    gap: 15px;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+  }
+
+  .botao2 {
+    width: 110px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    margin-top: 70px;
+  }
+}

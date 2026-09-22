@@ -40,6 +40,37 @@
   --cor-body: #050a0f;
 }
 
+/* Estilização do balão com posicionamento absoluto */
+.Contatos-balão {
+  position: absolute;
+  /* Distância do fundo da página/seção */
+  right: 30px; /* Distância da direita */
+  z-index: 9999; /* Garante que o balão fique POR CIMA de outros elementos */
+  top: 80px;
+}
+
+/* Deixa o link com cara de botão/balão clicável */
+.Contatos-balão a {
+  display: inline-block;
+  background-color: #881475;
+  color: #ffffff; /* Cor do texto */
+  padding: 12px 20px; /* Espaçamento interno (altura e largura) */
+  border-radius: 10px; /* Deixa as pontas arredondadas tipo balão */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 0 4px 10px rgba(241, 239, 239, 0.15); /* Sombra suave para dar profundidade */
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.Contatos-balão a:hover {
+  background-color: #8b037991; /* Fica um pouco mais escuro ao passar o mouse */
+  transform: scale(1.05); /* Aumenta levemente de tamanho */
+}
+
 .localizacao-direcao {
   display: flex;
   align-self: auto;
