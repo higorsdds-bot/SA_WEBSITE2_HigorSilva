@@ -106,6 +106,6 @@
     }
 
     .media-box {
-        border-radius: 15px; /* menos exagerado em telas pequenas */
+        border-radius: 15px; 
     }
 }
