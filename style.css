@@ -414,7 +414,8 @@ footer{
 
 .footer { 
   margin-top: 1100px;
-  color: var(--background-nav);
+  color: var(--white-soft);
   border-top: 1px double var(--border-nav);
   text-shadow: 0px 0px 10px var(--background-nav);
+  background-color: var(--black);
 }

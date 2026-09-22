@@ -1,0 +1,65 @@
+    :root {
+    --primary: #0A3DCE;
+    --primary-dark: #061E5C;
+    --primary-light: #3A7CFF;
+    --black: #070A14;
+    --black-soft: #101828;
+    --gray-dark: #1B2338;
+    --gray: #7A8BAE;
+    --black-rgb: rgb(10, 14, 28);
+    --white: #FFFFFF;
+    --white-soft: #EAF0FF;
+    --border: #24314F;
+     --border-nav: #63099e ;
+    --background-nav: #b55bf1;
+    --radius: 15px;
+    --metal-gradient: linear-gradient(180deg, #070A14 0%, #1C2A4A 30%, #111B33 50%, #2A3D6B 70%, #070A14 100%);
+    --metal-gradient2: linear-gradient(180deg, #050A0F 0%, #123456 30%, #0A1E32 50%, #1A4B7A 70%, #050A0F 100%);
+    --fonte-texto: "Poppins", sans-serif;
+    --peso-baixo:300;
+    --peso-regular: 400;
+    --peso-bold: 700;
+    --cor-body: #050A0F;
+--cor-botao-cancelar:#990b0bb0;
+--cor-botao-enviar:#0d2697;
+}
+
+
+.cards {
+ 
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 6fr);
+    grid-template-rows: 70px 80px 80px 80px 80px 80px ; 
+    margin-top: 142px;
+    margin-left: 30px;
+    margin-right: -50px;
+    gap:30px;
+    animation: movimentaCards 2.1s ease-in infinite alternate-reverse;
+   
+  
+
+}
+
+#iframeids {
+
+
+     border-radius: 35px;
+     border: 1px solid var(--white);
+       box-shadow: 0px 0px 15px var(--background-nav);
+}
+
+
+@keyframes movimentaCards {
+
+from { transform: translateX(-10px);
+  
+     
+}
+
+to {
+   transform:  translateX(2px);
+   
+}
+
+}

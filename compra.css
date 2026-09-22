@@ -315,8 +315,113 @@ gap: 90px;
 }
 
 
+
+.container-gif {
+
+margin-left: -230px;
+margin-top: -150px;
+
+
+}
+
+
 .bebe-dancando {
 
-font-size: 20px;
+position: relative;
+margin-left: 700px;
+margin-top: -200px;
+width: 190px;
+height: auto;
+animation: gifAnimado1 2s infinite alternate ease-in-out;
 
+}
+
+.bebe-dancando2 {
+
+margin-right: -600px;
+margin-bottom: -15px;
+width: 190px;
+height: auto;
+animation: gifAnimado2 2s infinite alternate ease-in-out;
+transition: 5s;
+
+
+}
+
+
+.bebe-dancando3 {
+
+  animation: gifAnimado2 2s infinite alternate ease-in-out;
+  transition: 5s;
+
+}
+
+@keyframes gifAnimado1 {
+
+0% {
+ transform: translate(0);
+}
+
+25% {
+  transform: translateX(-100px);
+  
+}
+25% {
+  transform: translateX(100px);
+
+}
+
+100% {
+  transform: translateY(-100px);
+ 
+}
+
+}
+
+@keyframes gifAnimado2 {
+
+0% {
+ transform: translate(0);
+}
+
+25% {
+  transform: translateX(-70px);
+  
+}
+25% {
+  transform: translateX(70px);
+
+}
+
+
+30% {
+transform: translateX(10);
+
+}
+
+
+
+100% {
+  transform: translateY(-100px);
+
+}
+}
+
+footer{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+ 
+
+}
+
+.footer { 
+  
+  margin-top: 100px;
+  color: var(--white-soft);
+  border-top: 1px double var(--border-nav);
+  text-shadow: 0px 0px 10px var(--background-nav);
+  background-color: var(--black);
 }
