@@ -1,171 +1,303 @@
-<!doctype html>
-<html lang="PT-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Summer Beats Festival - Galeria</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
-    <link rel="stylesheet" href="./css/footerNav.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/compra.css" />
-    <link rel="stylesheet" href="./css/galeria.css" />
-    <link rel="icon" href="./img/party.png" />
-  </head>
-  <body>
-    <header>
-      <nav class="nav-items">
-        <a href="./index.html " class="Nav"> Pagina Inicial</a>
-        <a href="./compra.html" class="Nav"> Compra ingresso </a>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confira a galeria oficial de fotos e vídeos do Summer Beats Festival. Palcos, apresentações, área de camping, gastronomia e ativações culturais.">
+  <title>Galeria de Fotos & Vídeos | Summer Beats Festival 2026</title>
+
+  <!-- Google Fonts & Phosphor Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css">
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="./css/footerNav.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/galeria.css">
+  <link rel="icon" type="image/png" href="./img/party.png">
+</head>
+<body>
+
+  <!-- Acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para a galeria</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="./index.html" class="brand-logo" aria-label="Summer Beats Festival Home">
+        <div class="logo-icon-wrapper">
+          <img src="./img/party.png" alt="Ícone Summer Beats">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">SUMMER BEATS</span>
+          <span class="brand-tagline">Festival 2026</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Navegação Principal">
+        <a href="./index.html" class="nav-link">
+          <i class="ph ph-house"></i> Início
+        </a>
+        <a href="./index.html#experiencia" class="nav-link">
+          <i class="ph ph-sparkle"></i> O Festival
+        </a>
+        <a href="./index.html#palcos" class="nav-link">
+          <i class="ph ph-waveform"></i> Palcos
+        </a>
+        <a href="./galeria.html" class="nav-link active">
+          <i class="ph ph-image"></i> Galeria
+        </a>
+        <a href="./contatos.html" class="nav-link">
+          <i class="ph ph-envelope"></i> Contato
+        </a>
+        <a href="./compra.html" class="nav-cta-btn">
+          <i class="ph-bold ph-ticket"></i> Ingressos
+        </a>
       </nav>
-    </header>
 
-    <div class="nave-compra">
-      <span class="inicio"> Pagina inicial</span>
-      <span class="icone-seta"> <i class="ph ph-caret-right"></i> </span>
-      <span class="compra">Galeria</span>
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+        <i class="ph-bold ph-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <a href="./index.html"><i class="ph ph-house"></i> Início</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">Galeria Multimídia</span>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <main id="main-content" class="container">
+
+    <!-- CABEÇALHO DA GALERIA -->
+    <div class="gallery-page-header">
+      <span class="section-eyebrow">Momentos Inesquecíveis</span>
+      <h1 class="section-title">Galeria Oficial Summer Beats</h1>
+      <p class="section-subtitle">
+        Explore as fotos em alta resolução e assista aos vídeos com a atmosfera mágica de cada setor do festival.
+      </p>
+
+      <!-- ABAS DE FILTRO POR CATEGORIA -->
+      <div class="filter-tabs-container" role="tablist" aria-label="Filtro de fotos e vídeos">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          <i class="ph-bold ph-squares-four"></i> Todos
+        </button>
+        <button class="filter-btn" data-filter="palco" role="tab" aria-selected="false">
+          <i class="ph-bold ph-microphone-stage"></i> Palco Principal
+        </button>
+        <button class="filter-btn" data-filter="camping" role="tab" aria-selected="false">
+          <i class="ph-bold ph-tent"></i> Camping Universitário
+        </button>
+        <button class="filter-btn" data-filter="gastronomia" role="tab" aria-selected="false">
+          <i class="ph-bold ph-fork-knife"></i> Food Park
+        </button>
+        <button class="filter-btn" data-filter="cultura" role="tab" aria-selected="false">
+          <i class="ph-bold ph-paint-brush"></i> Espaço Cultural
+        </button>
+      </div>
     </div>
 
-    <main>
-      <div class="titulos-videos">Palco Principal - Edição 2025</div>
-      <div class="cards">
-        <div class="card-item">
-          <img
-            class="fotos-evento"
-            src="./Img/palco-principal.png"
-            alt="Palco principal do Summer Beats Festival"
-          />
-          <p class="legenda">Palco de abertura</p>
-        </div>
-        <div class="card-item">
-          <iframe
-            class="fotos-evento"
-            src="https://www.youtube.com/embed/TqnPuNpjuGY"
-            title="Avenged Sevenfold Live at Pinkpop"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            allowfullscreen
-          ></iframe>
-          <p class="legenda">@SummerBeats - Show Principal</p>
-        </div>
-      </div>
+    <!-- GRID MULTIMÍDIA -->
+    <section class="gallery-grid" aria-label="Itens da Galeria">
 
-      <div class="titulos-videos">Camping Universitário - Flórida</div>
-      <div class="cards">
-        <div class="card-item">
-          <img
-            class="fotos-evento"
-            src="./Img/Camping.png"
-            alt="Área de camping do festival"
-          />
-          <p class="legenda">Área de Camping Universitário</p>
+      <!-- ITEM 1: Palco - Foto -->
+      <article class="gallery-card" data-category="palco">
+        <div class="gallery-media-wrapper">
+          <span class="media-type-badge"><i class="ph-bold ph-camera"></i> Foto HD</span>
+          <img src="./img/palco-principal.png" alt="Palco Principal do Summer Beats Festival" class="gallery-photo-click" data-caption="Palco Principal Summer Beats — Abertura histórica com iluminação pirotécnica 4K" loading="lazy">
+          <div class="zoom-hint-overlay">
+            <div class="zoom-hint-icon"><i class="ph-bold ph-magnifying-glass-plus"></i></div>
+          </div>
         </div>
-        <div class="card-item">
-          <iframe
-            class="fotos-evento"
-            src="https://www.youtube.com/embed/GPphPKv_x1k"
-            title="Tour pelo Camping"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            allowfullscreen
-          ></iframe>
-          <p class="legenda">@SummerBeats - Tour do Camping</p>
+        <div class="gallery-info">
+          <h3 class="gallery-title">Palco Principal — Noite de Abertura</h3>
+          <p class="gallery-caption">Cenografia monumental com mais de 40 metros de boca de cena e telões de LED de alta definição.</p>
         </div>
-      </div>
+      </article>
 
-      <div class="titulos-videos">Praça de Alimentação</div>
-      <div class="cards">
-        <div class="card-item">
-          <img
-            class="fotos-evento"
-            src="./Img/foodtrucks.png"
-            alt="Fileira de food trucks coloridos"
-          />
-          <p class="legenda">Food trucks variados</p>
+      <!-- ITEM 2: Palco - Vídeo -->
+      <article class="gallery-card" data-category="palco">
+        <div class="gallery-media-wrapper">
+          <span class="media-type-badge"><i class="ph-bold ph-video-camera"></i> Vídeo Ao Vivo</span>
+          <iframe src="https://www.youtube.com/embed/TqnPuNpjuGY" title="Apresentação no Palco Principal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <div class="card-item">
-          <iframe
-            class="fotos-evento"
-            src="https://www.youtube.com/embed/oMWA97OYmMM?si=f__HBTILUjB3NaBU"
-            title="Os melhores de NY"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            allowfullscreen
-          ></iframe>
-          <p class="legenda">@SummerBeats - Os melhores de NY</p>
+        <div class="gallery-info">
+          <h3 class="gallery-title">Show Principal no Palco Beats</h3>
+          <p class="gallery-caption">Assista aos melhores momentos do show que levantou o público no encerramento da última edição.</p>
         </div>
-      </div>
+      </article>
 
-      <div class="titulos-videos">Espaço Cultural</div>
-      <div class="cards">
-        <div class="card-item">
-          <img
-            class="fotos-evento"
-            src="./Img/espaco-cultural.jpg"
-            alt="Espaço cultural com feira de discos"
-          />
-          <p class="legenda">Oficinas musicais, arte e discos de vinil</p>
+      <!-- ITEM 3: Camping - Foto -->
+      <article class="gallery-card" data-category="camping">
+        <div class="gallery-media-wrapper">
+          <span class="media-type-badge"><i class="ph-bold ph-camera"></i> Foto HD</span>
+          <img src="./img/Camping.png" alt="Área de Camping Universitário" class="gallery-photo-click" data-caption="Área de Camping Universitário — Convivência e acolhimento para mais de 10 mil estudantes" loading="lazy">
+          <div class="zoom-hint-overlay">
+            <div class="zoom-hint-icon"><i class="ph-bold ph-magnifying-glass-plus"></i></div>
+          </div>
         </div>
-        <div class="card-item">
-          <iframe
-            class="fotos-evento"
-            src="https://www.youtube.com/embed/luZLml1BwqA?si=_03UM3CE8df1hlTI"
-            title="Oficinas Musicais e Feira"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            allowfullscreen
-          ></iframe>
-          <p class="legenda">@SummerBeats - Oficinas e Feira</p>
+        <div class="gallery-info">
+          <h3 class="gallery-title">Vila do Camping Universitário</h3>
+          <p class="gallery-caption">Espaço estruturado e seguro para barracas de estudantes de todo o país, com acesso direto aos palcos.</p>
         </div>
-      </div>
-    </main>
+      </article>
 
-    <div class="footer">
-      <footer>
-        <p>Email: contato@summerbeatsfestival.com.br</p>
-        <p>Telefone: (11) 98765-4321</p>
-        <p>&copy; 2026 Summer Beats Festival. Todos os direitos reservados.</p>
-      </footer>
+      <!-- ITEM 4: Camping - Vídeo -->
+      <article class="gallery-card" data-category="camping">
+        <div class="gallery-media-wrapper">
+          <span class="media-type-badge"><i class="ph-bold ph-video-camera"></i> Tour Virtual</span>
+          <iframe src="https://www.youtube.com/embed/GPphPKv_x1k" title="Tour Completo pelo Camping Universitário" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-info">
+          <h3 class="gallery-title">Tour pelo Camping & Infraestrutura</h3>
+          <p class="gallery-caption">Conheça os chuveiros com água aquecida, vestiários limpos e estações de convivência integradas.</p>
+        </div>
+      </article>
+
+      <!-- ITEM 5: Gastronomia - Foto -->
+      <article class="gallery-card" data-category="gastronomia">
+        <div class="gallery-media-wrapper">
+          <span class="media-type-badge"><i class="ph-bold ph-camera"></i> Foto HD</span>
+          <img src="./img/foodtrucks.png" alt="Food Trucks e Praça Gastronômica" class="gallery-photo-click" data-caption="Praça Gastronômica — Mais de 25 trucks com pratos regionais e lanches artesanais" loading="lazy">
+          <div class="zoom-hint-overlay">
+            <div class="zoom-hint-icon"><i class="ph-bold ph-magnifying-glass-plus"></i></div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h3 class="gallery-title">Praça de Alimentação & Food Trucks</h3>
+          <p class="gallery-caption">Variedade gastronômica com preços acessíveis aos estudantes, opções veganas e bebidas artesanais.</p>
+        </div>
+      </article>
+
+      <!-- ITEM 6: Gastronomia - Vídeo -->
+      <article class="gallery-card" data-category="gastronomia">
+        <div class="gallery-media-wrapper">
+          <span class="media-type-badge"><i class="ph-bold ph-video-camera"></i> Tour Gastronômico</span>
+          <iframe src="https://www.youtube.com/embed/oMWA97OYmMM?si=f__HBTILUjB3NaBU" title="Gastronomia Summer Beats" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-info">
+          <h3 class="gallery-title">Os Sabores do Summer Beats</h3>
+          <p class="gallery-caption">Uma viagem culinária completa durante os 3 dias para repor as energias entre os shows.</p>
+        </div>
+      </article>
+
+      <!-- ITEM 7: Espaço Cultural - Foto -->
+      <article class="gallery-card" data-category="cultura">
+        <div class="gallery-media-wrapper">
+          <span class="media-type-badge"><i class="ph-bold ph-camera"></i> Foto HD</span>
+          <img src="./img/espaco-cultural.jpg" alt="Espaço Cultural com Feira de Vinil" class="gallery-photo-click" data-caption="Espaço Cultural & Feira de Vinil — Arte universitária, oficinas e interações" loading="lazy">
+          <div class="zoom-hint-overlay">
+            <div class="zoom-hint-icon"><i class="ph-bold ph-magnifying-glass-plus"></i></div>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <h3 class="gallery-title">Espaço Cultural & Feira de Discos</h3>
+          <p class="gallery-caption">Bancas de vinis raros, exposições visuais produzidas por alunos e workshops artísticos.</p>
+        </div>
+      </article>
+
+      <!-- ITEM 8: Espaço Cultural - Vídeo -->
+      <article class="gallery-card" data-category="cultura">
+        <div class="gallery-media-wrapper">
+          <span class="media-type-badge"><i class="ph-bold ph-video-camera"></i> Oficinas & Arte</span>
+          <iframe src="https://www.youtube.com/embed/luZLml1BwqA?si=_03UM3CE8df1hlTI" title="Oficinas Musicais e Ativações de Arte" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="gallery-info">
+          <h3 class="gallery-title">Ativações Culturais & Workshops</h3>
+          <p class="gallery-caption">Imersão em produção musical, pintura em tela ao vivo e palestras com produtores do mercado.</p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX MODAL PARA FOTOS -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Visualizador de Imagem">
+    <button class="lightbox-close-btn" id="lightboxClose" aria-label="Fechar visualizador">
+      <i class="ph-bold ph-x"></i>
+    </button>
+    <div class="lightbox-img-container">
+      <img id="lightboxImg" src="" alt="Foto ampliada do Summer Beats Festival">
+      <p class="lightbox-caption-text" id="lightboxCaption"></p>
     </div>
-  </body>
+  </div>
+
+  <!-- RODAPÉ COMPLETO UNIFICADO -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col-brand">
+        <a href="./index.html" class="brand-logo">
+          <div class="logo-icon-wrapper">
+            <img src="./img/party.png" alt="Logo Summer Beats">
+          </div>
+          <div class="brand-info">
+            <span class="brand-name">SUMMER BEATS</span>
+            <span class="brand-tagline">Festival 2026</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          O maior evento de celebração da música e da cultura universitária. Três dias inesquecíveis de energia e diversidade.
+        </p>
+        <div class="footer-socials">
+          <a href="./contatos.html" class="social-btn" aria-label="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="WhatsApp"><i class="ph-bold ph-whatsapp-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="Facebook"><i class="ph-bold ph-facebook-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="TikTok"><i class="ph-bold ph-tiktok-logo"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navegação Rápida</h4>
+        <ul class="footer-links">
+          <li><a href="./index.html"><i class="ph ph-caret-right"></i> Página Inicial</a></li>
+          <li><a href="./compra.html"><i class="ph ph-caret-right"></i> Compra de Ingressos</a></li>
+          <li><a href="./galeria.html"><i class="ph ph-caret-right"></i> Galeria Multimídia</a></li>
+          <li><a href="./contatos.html"><i class="ph ph-caret-right"></i> Fale Conosco / Suporte</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Informações Úteis</h4>
+        <ul class="footer-links">
+          <li><a href="./compra.html#regras"><i class="ph ph-caret-right"></i> Meia-Entrada Estudantil</a></li>
+          <li><a href="./index.html#experiencia"><i class="ph ph-caret-right"></i> Guia do Camping</a></li>
+          <li><a href="./contatos.html#faq"><i class="ph ph-caret-right"></i> Dúvidas Frequentes (FAQ)</a></li>
+          <li><a href="./contatos.html"><i class="ph ph-caret-right"></i> Credenciamento de Imprensa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4 class="footer-heading">Fique por Dentro</h4>
+        <p>Receba as coberturas de fotos oficiais e novos anúncios de line-up.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('E-mail cadastrado com sucesso!'); this.reset();">
+          <input type="email" placeholder="Seu e-mail" class="newsletter-input" required>
+          <button type="submit" class="newsletter-btn" aria-label="Inscrever-se">
+            <i class="ph-bold ph-paper-plane-tilt"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Summer Beats Festival. Todos os direitos reservados. CNPJ: 12.345.678/0001-90.</p>
+      <div class="footer-bottom-links">
+        <a href="./contatos.html">Termos de Uso</a>
+        <a href="./contatos.html">Privacidade</a>
+        <a href="./contatos.html">Classificação 18+</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
 </html>

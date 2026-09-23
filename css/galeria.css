@@ -1,139 +1,276 @@
-:root {
-  --primary: #0a3dce;
-  --primary-dark: #061e5c;
-  --primary-light: #3a7cff;
-  --black: #070a14;
-  --black-soft: #101828;
-  --gray-dark: #1b2338;
-  --gray: #7a8bae;
-  --black-rgb: rgb(10, 14, 28);
-  --white: #ffffff;
-  --white-soft: #eaf0ff;
-  --border: #24314f;
-  --border-nav: #63099e;
-  --background-nav: #b55bf1;
-  --radius: 15px;
-  --metal-gradient: linear-gradient(
-    180deg,
-    #070a14 0%,
-    #1c2a4a 30%,
-    #111b33 50%,
-    #2a3d6b 70%,
-    #070a14 100%
-  );
-  --metal-gradient2: linear-gradient(
-    180deg,
-    #050a0f 0%,
-    #123456 30%,
-    #0a1e32 50%,
-    #1a4b7a 70%,
-    #050a0f 100%
-  );
-  --fonte-texto: "Poppins", sans-serif;
-  --peso-baixo: 300;
-  --peso-regular: 400;
-  --peso-bold: 700;
-  --cor-body: #050a0f;
-  --cor-botao-cancelar: #990b0bb0;
-  --cor-botao-enviar: #0d2697;
-}
+/* ==========================================================================
+   SUMMER BEATS FESTIVAL 2026 - GALERIA MULTIMÍDIA (galeria.css)
+   ========================================================================== */
 
-.titulos-videos {
-  background-color: var(--border-nav);
-  color: var(--white);
-  position: relative;
-  z-index: 10;
-  padding: 10px 5%;
-  font-weight: var(--peso-bold);
-  font-size: clamp(16px, 4vw, 22px);
+.gallery-page-header {
+  padding: 50px 0 30px 0;
   text-align: center;
-  border-radius: 10px;
-  margin: clamp(30px, 6vw, 60px) auto 20px auto;
-  width: fit-content;
-  max-width: 90%;
-  box-shadow: 0px 4px 15px var(--white);
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
-.cards {
+/* Category Filter Tabs */
+.filter-tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px auto 45px auto;
+  max-width: 900px;
+}
+
+.filter-btn {
+  background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-btn:hover {
+  color: #ffffff;
+  border-color: var(--border-glow);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.filter-btn.active {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent-pink) 100%);
+  border-color: transparent;
+  box-shadow: 0 4px 18px var(--primary-glow);
+}
+
+/* ==========================================================================
+   GALLERY MEDIA GRID
+   ========================================================================== */
+.gallery-grid {
   display: grid;
-  position: relative;
-  z-index: 5;
-  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-  gap: clamp(20px, 4vw, 40px);
-  margin: 20px clamp(15px, 5vw, 50px) 60px clamp(15px, 5vw, 50px);
-  justify-items: center;
-  animation: movimentaCards 2.1s ease-in infinite alternate-reverse;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 28px;
+  margin-bottom: 80px;
 }
 
-/* Agrupa a mídia e a legenda */
-.card-item {
+.gallery-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-glow);
+  box-shadow: 0 16px 36px -10px var(--primary-glow);
+}
+
+/* Media Box (Image or Video) */
+.gallery-media-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #0b0d18;
+  overflow: hidden;
+}
+
+.gallery-media-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-card:hover .gallery-media-wrapper img {
+  transform: scale(1.06);
+}
+
+.gallery-media-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Overlay for click to zoom */
+.zoom-hint-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 10, 17, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+.zoom-hint-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(157, 78, 221, 0.85);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 0 20px var(--primary-glow);
+  transform: scale(0.8);
+  transition: transform var(--transition-fast);
+}
+
+.gallery-media-wrapper:hover .zoom-hint-overlay {
+  opacity: 1;
+}
+
+.gallery-media-wrapper:hover .zoom-hint-icon {
+  transform: scale(1);
+}
+
+/* Media Type Badge */
+.media-type-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(9, 10, 17, 0.82);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-subtle);
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+}
+
+/* Card Content / Caption */
+.gallery-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.gallery-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.gallery-caption {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   LIGHTBOX MODAL FOR IMAGES
+   ========================================================================== */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(16px);
+  z-index: 100000;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 7px;
-  width: 100%;
-  max-width: 450px;
+  justify-content: center;
+  padding: 30px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-fast);
 }
 
-/* Estilo unificado para Imagens e Vídeos (Iframes) */
-.fotos-evento {
-  width: 100%;
-  aspect-ratio: 16/9;
-  border-radius: 15px;
-  border: 2px solid var(--border-nav);
-  box-shadow: 0px 0px 15px var(--background-nav);
-  object-fit: cover;
-  background-color: var(--black-soft);
+.lightbox-modal.active {
+  opacity: 1;
+  visibility: visible;
 }
 
-.legenda {
-  font-family: var(--fonte-texto);
-  background-color: var(--border-nav);
-  color: var(--white-soft);
-  padding: 8px clamp(12px, 3vw, 20px);
-  border-radius: 7px;
-  font-size: clamp(
-    12px,
-    2vw,
-    14px
-  ); /*  clamp permite definir o tamanho minimo, ideal e maximo. Ele exige 3 propriedas */
-  text-align: center;
-  margin: 0;
-  border: 1px solid var(--border);
-  box-shadow: 0px 0px 15px var(--background-nav);
+.lightbox-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-subtle);
+  color: #ffffff;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.lightbox-close-btn:hover {
+  background: var(--accent-pink);
+  transform: rotate(90deg);
+}
+
+.lightbox-img-container {
+  max-width: 1050px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-img-container img {
   max-width: 100%;
-  word-wrap: break-word; /*  ajuda a nao quebrar e enviar o conteudo para proxima linha - não permite sair do container posso usar tambem ' overflow-wrap: break-word; ' ( é o mais recomendado atualmente) faz a mesma coisa*/
+  max-height: 72vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+  border: 1px solid var(--border-glow);
 }
 
-@keyframes movimentaCards {
-  from {
-    transform: translateX(-10px);
-  }
-  to {
-    transform: translateX(5px);
-  }
+.lightbox-caption-text {
+  margin-top: 16px;
+  font-size: 1rem;
+  color: var(--text-main);
+  text-align: center;
+  font-weight: 500;
 }
 
-/* responsividade*/
-@media (max-width: 480px) {
-  .cards {
-    grid-template-columns: 1fr; /* uma coluna só, sem apertar */
-    margin: 15px 15px 40px 15px;
+/* ==========================================================================
+   RESPONSIVE (galeria.css)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
     gap: 20px;
-    animation: none; /* evita overflow lateral em telas muito pequenas */
   }
 
-  .media-box {
-    border-radius: 15px;
+  .filter-tabs-container {
+    gap: 8px;
   }
 
-  .inicio,
-  .icone-seta,
-  .compra {
-    font-size: 0px;
-    margin-left: 8px;
-    margin-left: 30px;
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
   }
 }

@@ -1,114 +1,342 @@
-<!doctype html>
-<html lang="PT-br">
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contatos</title>
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
-  <link rel="stylesheet" href="./css/footerNav.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/Contato.css" />
-  <link rel="icon" href="./img/party.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Central de Atendimento do Summer Beats Festival 2026. Tire suas dúvidas sobre ingressos, programação, camping universitário ou fale com nossa equipe.">
+  <title>Fale Conosco & Atendimento | Summer Beats Festival 2026</title>
+
+  <!-- Google Fonts & Phosphor Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css">
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="./css/footerNav.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/Contato.css">
+  <link rel="icon" type="image/png" href="./img/party.png">
 </head>
-
-<header>
-  <nav class="nav-items">
-    <a href="./index.html" class="Nav"> Pagina Inicial</a>
-    <a href="./compra.html" class="Nav"> Compra ingresso </a>
-    <a href="./galeria.html" class="Nav"> Galeria </a>
-  </nav>
-</header>
-
 <body>
-  <form action="#">
-    <h2>Formulário de Contato</h2>
 
-    <!-- Nome -->
-    <div>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required placeholder="Nome completo" />
-    </div>
+  <!-- Acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para o formulário de contato</a>
 
-    <!-- Email -->
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required placeholder="exemplo@gmail.com" />
-    </div>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="./index.html" class="brand-logo" aria-label="Summer Beats Festival Home">
+        <div class="logo-icon-wrapper">
+          <img src="./img/party.png" alt="Ícone Summer Beats">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">SUMMER BEATS</span>
+          <span class="brand-tagline">Festival 2026</span>
+        </div>
+      </a>
 
-    <!-- Telefone -->
-    <div>
-      <label for="telefone">Telefone:</label>
-      <input type="tel" id="telefone" name="telefone" placeholder="(027) 0000-0000" />
-    </div>
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Navegação Principal">
+        <a href="./index.html" class="nav-link">
+          <i class="ph ph-house"></i> Início
+        </a>
+        <a href="./index.html#experiencia" class="nav-link">
+          <i class="ph ph-sparkle"></i> O Festival
+        </a>
+        <a href="./index.html#palcos" class="nav-link">
+          <i class="ph ph-waveform"></i> Palcos
+        </a>
+        <a href="./galeria.html" class="nav-link">
+          <i class="ph ph-image"></i> Galeria
+        </a>
+        <a href="./contatos.html" class="nav-link active">
+          <i class="ph ph-envelope"></i> Contato
+        </a>
+        <a href="./compra.html" class="nav-cta-btn">
+          <i class="ph-bold ph-ticket"></i> Ingressos
+        </a>
+      </nav>
 
-    <!-- Assunto -->
-    <div>
-      <label for="assunto">Assunto:</label>
-      <select id="assunto" name="assunto" required>
-        <option value="" disabled selected>Selecione um assunto...</option>
-        <option value="duvidas_ingressos">
-          Dúvidas sobre Ingressos / Bilheteira
-        </option>
-        <option value="lineup_horarios">Line-up e Horários dos Shows</option>
-        <option value="imprensa_credenciamento">
-          Imprensa e Credenciamento
-        </option>
-        <option value="patrocinio_parcerias">Patrocínio e Parcerias</option>
-        <option value="trabalhe_conosco">
-          Quero Trabalhar / Tocar no Evento
-        </option>
-        <option value="achados_perdidos">Achados e Perdidos</option>
-        <option value="outros">Outros Assuntos</option>
-      </select>
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+        <i class="ph-bold ph-list"></i>
+      </button>
     </div>
+  </header>
 
-    <!-- Mensagem -->
-    <div class="mensagem">
-      <label for="mensagem">Descrição contato:</label>
-    </div>
-    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-    <!-- Botão de Envio -->
-    <div>
-      <button class="botao2" type="submit">Enviar</button>
-    </div>
-  </form>
-
-  <div class="card-icones">
-    <div class="item-contato">
-      <span>Instagram
-        <i class="ph-bold ph-instagram-logo"></i>
-      </span>
-    </div>
-
-    <div class="item-contato">
-      <span>
-        whatsaapp
-        <i class="ph-bold ph-whatsapp-logo"></i>
-      </span>
-    </div>
-
-    <div class="item-contato">
-      <span>
-        Facebook
-        <i class="ph-bold ph-facebook-logo"></i>
-      </span>
-    </div>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <a href="./index.html"><i class="ph ph-house"></i> Início</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">Central de Atendimento</span>
   </div>
-</body>
 
-</html>
+  <!-- Conteúdo Principal -->
+  <main id="main-content" class="container">
 
-<div class="footer">
-  <footer>
-    <p>Email: contato@summerbeatsfestival.com.br</p>
-    <p>Telefone: (11) 98765-4321</p>
-    <p>&copy; 2026 Summer Beats Festival. Todos os direitos reservados.</p>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <div class="contact-page-header">
+      <span class="section-eyebrow">Atendimento & Suporte</span>
+      <h1 class="section-title">Estamos Aqui Para Ajudar</h1>
+      <p class="section-subtitle">
+        Dúvidas sobre ingressos, transfer, camping universitário ou credenciamento? Entre em contato com a equipe Summer Beats.
+      </p>
+    </div>
+
+    <!-- SEÇÃO PRINCIPAL: 2 COLUNAS (INFO + FORMULÁRIO) -->
+    <section class="contact-main-grid" aria-label="Canais de Contato">
+
+      <!-- COLUNA ESQUERDA: INFORMAÇÕES DE ATENDIMENTO -->
+      <div class="contact-info-panel">
+        <div class="contact-info-card">
+          <h2 class="contact-card-title">Canais Oficiais</h2>
+          <p class="contact-card-desc">
+            Nossa equipe de suporte está de prontidão para garantir que sua experiência antes, durante e após o festival seja perfeita.
+          </p>
+
+          <div class="contact-channels-list">
+            <!-- Canal: E-mail -->
+            <a href="mailto:contato@summerbeatsfestival.com.br" class="contact-channel-item">
+              <div class="channel-icon-box">
+                <i class="ph-bold ph-envelope-simple"></i>
+              </div>
+              <div class="channel-texts">
+                <span class="channel-label">E-mail Oficial</span>
+                <span class="channel-val">contato@summerbeatsfestival.com.br</span>
+              </div>
+            </a>
+
+            <!-- Canal: Telefone / SAC -->
+            <a href="tel:+5511987654321" class="contact-channel-item">
+              <div class="channel-icon-box">
+                <i class="ph-bold ph-whatsapp-logo"></i>
+              </div>
+              <div class="channel-texts">
+                <span class="channel-label">WhatsApp SAC (Seg a Sex das 09h às 18h)</span>
+                <span class="channel-val">(11) 98765-4321</span>
+              </div>
+            </a>
+
+            <!-- Canal: Localização -->
+            <div class="contact-channel-item">
+              <div class="channel-icon-box">
+                <i class="ph-bold ph-map-pin"></i>
+              </div>
+              <div class="channel-texts">
+                <span class="channel-label">Local do Festival</span>
+                <span class="channel-val">Campus Universitário Central — São Paulo, SP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Redes Sociais -->
+          <div class="social-channels-box">
+            <h3 class="social-channels-title">Acompanhe nas Redes Sociais</h3>
+            <div class="social-buttons-grid">
+              <a href="#" class="social-pill-btn" aria-label="Instagram">
+                <i class="ph-bold ph-instagram-logo"></i> Instagram
+              </a>
+              <a href="#" class="social-pill-btn" aria-label="WhatsApp">
+                <i class="ph-bold ph-whatsapp-logo"></i> WhatsApp
+              </a>
+              <a href="#" class="social-pill-btn" aria-label="Facebook">
+                <i class="ph-bold ph-facebook-logo"></i> Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUNA DIREITA: FORMULÁRIO DE CONTATO -->
+      <div class="contact-form-card">
+        <h2 class="contact-form-title">Envie uma Mensagem</h2>
+        <p class="contact-form-subtitle">Preencha o formulário e retornaremos no seu e-mail o mais rápido possível.</p>
+
+        <form id="contactForm" class="contact-form-inner" novalidate>
+          
+          <div class="form-group">
+            <label for="nome" class="form-label">
+              Nome Completo <span class="required-star">*</span>
+            </label>
+            <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required autocomplete="name">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">
+                E-mail para Contato <span class="required-star">*</span>
+              </label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="seu.email@exemplo.com" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="telefone" class="form-label">
+                Telefone / Celular
+              </label>
+              <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(11) 98765-4321" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto" class="form-label">
+              Assunto da Mensagem <span class="required-star">*</span>
+            </label>
+            <select id="assunto" name="assunto" class="form-select" required>
+              <option value="" disabled selected>Selecione um assunto...</option>
+              <option value="duvidas_ingressos">Dúvidas sobre Ingressos e Bilheteria</option>
+              <option value="lineup_horarios">Line-up e Horários dos Shows</option>
+              <option value="camping_info">Camping Universitário e Vagas</option>
+              <option value="imprensa_credenciamento">Imprensa e Credenciamento de Mídia</option>
+              <option value="patrocinio_parcerias">Patrocínio e Parcerias Comerciais</option>
+              <option value="trabalhe_conosco">Quero Tocar / Trabalhar no Evento</option>
+              <option value="achados_perdidos">Achados e Perdidos</option>
+              <option value="outros">Outros Assuntos</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem" class="form-label">
+              Descrição da Dúvida ou Proposta <span class="required-star">*</span>
+            </label>
+            <textarea id="mensagem" name="mensagem" class="form-textarea" placeholder="Descreva sua solicitação com o máximo de detalhes..." rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-contact-submit">
+            <i class="ph-bold ph-paper-plane-tilt"></i> Enviar Mensagem
+          </button>
+
+        </form>
+      </div>
+
+    </section>
+
+    <!-- SEÇÃO: PERGUNTAS FREQUENTES (FAQ ACCORDION) -->
+    <section class="faq-section" id="faq">
+      <div class="section-header">
+        <span class="section-eyebrow">Tire Suas Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes (FAQ)</h2>
+        <p class="section-subtitle">
+          Respostas rápidas para as principais questões sobre o festival, ingressos e estrutura.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        
+        <div class="faq-item open">
+          <button type="button" class="faq-question">
+            <span>Qual é a classificação etária do Summer Beats Festival?</span>
+            <i class="ph-bold ph-caret-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>O festival é classificado para maiores de 18 anos. É obrigatória a apresentação de documento original oficial com foto (RG, CNH ou Passaporte) na portaria de acesso do Campus Central.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>Como funciona a comprovação de meia-entrada e Camping Gratuito?</span>
+            <i class="ph-bold ph-caret-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Estudantes universitários e de pós-graduação devem apresentar a Carteira de Identificação Estudantil (CIE) válida ou comprovante de matrícula oficial recente juntamente com documento com foto. A gratuidade do Camping é válida para todos os matriculados que comprovarem vínculo no check-in.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>O que posso e não posso levar para o festival e para o camping?</span>
+            <i class="ph-bold ph-caret-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>É permitido levar barraca de camping, isolante térmico, saco de dormir, roupas, protetor solar, repelente e alimentos lacrados em embalagem industrial. É estritamente proibida a entrada de objetos pontiagudos, garrafas de vidro, substâncias ilícitas, fogareiros a gás ou equipamentos de som de alta potência.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>Como funciona o sistema de pulseiras e consumo no evento?</span>
+            <i class="ph-bold ph-caret-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>O festival opera 100% no sistema Cashless (sem dinheiro em espécie). Sua pulseira com chip RFID será entregue na entrada e poderá ser recarregada antecipadamente online via PIX ou cartão de crédito, ou nos totens de autoatendimento espalhados pelo Campus Central.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ COMPLETO UNIFICADO -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col-brand">
+        <a href="./index.html" class="brand-logo">
+          <div class="logo-icon-wrapper">
+            <img src="./img/party.png" alt="Logo Summer Beats">
+          </div>
+          <div class="brand-info">
+            <span class="brand-name">SUMMER BEATS</span>
+            <span class="brand-tagline">Festival 2026</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          O maior evento de celebração da música e da cultura universitária. Três dias inesquecíveis de energia e diversidade.
+        </p>
+        <div class="footer-socials">
+          <a href="./contatos.html" class="social-btn" aria-label="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="WhatsApp"><i class="ph-bold ph-whatsapp-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="Facebook"><i class="ph-bold ph-facebook-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="TikTok"><i class="ph-bold ph-tiktok-logo"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navegação Rápida</h4>
+        <ul class="footer-links">
+          <li><a href="./index.html"><i class="ph ph-caret-right"></i> Página Inicial</a></li>
+          <li><a href="./compra.html"><i class="ph ph-caret-right"></i> Compra de Ingressos</a></li>
+          <li><a href="./galeria.html"><i class="ph ph-caret-right"></i> Galeria Multimídia</a></li>
+          <li><a href="./contatos.html"><i class="ph ph-caret-right"></i> Fale Conosco / Suporte</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Informações Úteis</h4>
+        <ul class="footer-links">
+          <li><a href="./compra.html#regras"><i class="ph ph-caret-right"></i> Meia-Entrada Estudantil</a></li>
+          <li><a href="./index.html#experiencia"><i class="ph ph-caret-right"></i> Guia do Camping</a></li>
+          <li><a href="#faq"><i class="ph ph-caret-right"></i> Dúvidas Frequentes (FAQ)</a></li>
+          <li><a href="./contatos.html"><i class="ph ph-caret-right"></i> Credenciamento de Imprensa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4 class="footer-heading">Fique por Dentro</h4>
+        <p>Receba em primeira mão novidades de atrações e informações de credenciamento.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('E-mail cadastrado com sucesso!'); this.reset();">
+          <input type="email" placeholder="Seu e-mail" class="newsletter-input" required>
+          <button type="submit" class="newsletter-btn" aria-label="Inscrever-se">
+            <i class="ph-bold ph-paper-plane-tilt"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Summer Beats Festival. Todos os direitos reservados. CNPJ: 12.345.678/0001-90.</p>
+      <div class="footer-bottom-links">
+        <a href="./contatos.html">Termos de Uso</a>
+        <a href="./contatos.html">Privacidade</a>
+        <a href="./contatos.html">Classificação 18+</a>
+      </div>
+    </div>
   </footer>
-</div>
 
-<script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

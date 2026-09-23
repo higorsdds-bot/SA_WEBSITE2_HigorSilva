@@ -1,132 +1,429 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Beats Festival - Página Inicial</title>
-       <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    />
-    <link rel="stylesheet" href="./css/footerNav.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Summer Beats Festival 2026 - O maior festival universitário do país. 15 a 17 de Janeiro de 2026 no Campus Universitário Central. Garanta seu ingresso!">
+  <title>Summer Beats Festival 2026 | Página Oficial</title>
 
-    <link rel="icon" href="./img/party.png">
-    </head>
+  <!-- Google Fonts & Phosphor Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css">
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="./css/footerNav.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" href="./img/party.png">
+</head>
 <body>
 
-  
-<header> 
+  <!-- Acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-    
-    <nav class="nav-items">
-    
-    <a href="#" class="Nav"> Pagina Inicial</a>
-    <a href="./compra.html" class="Nav" > Compra ingresso </a>
-    <a href="./galeria.html" class="Nav"> Galeria </a>
-   
-</nav> 
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="./index.html" class="brand-logo" aria-label="Summer Beats Festival Home">
+        <div class="logo-icon-wrapper">
+          <img src="./img/party.png" alt="Ícone Summer Beats">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">SUMMER BEATS</span>
+          <span class="brand-tagline">Festival 2026</span>
+        </div>
+      </a>
 
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Navegação Principal">
+        <a href="./index.html" class="nav-link active">
+          <i class="ph ph-house"></i> Início
+        </a>
+        <a href="#experiencia" class="nav-link">
+          <i class="ph ph-sparkle"></i> O Festival
+        </a>
+        <a href="#palcos" class="nav-link">
+          <i class="ph ph-waveform"></i> Palcos
+        </a>
+        <a href="./galeria.html" class="nav-link">
+          <i class="ph ph-image"></i> Galeria
+        </a>
+        <a href="./contatos.html" class="nav-link">
+          <i class="ph ph-envelope"></i> Contato
+        </a>
+        <a href="./compra.html" class="nav-cta-btn">
+          <i class="ph-bold ph-ticket"></i> Ingressos
+        </a>
+      </nav>
 
-</header>
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+        <i class="ph-bold ph-list"></i>
+      </button>
+    </div>
+  </header>
 
-<div class="localizacao-direcao">   
-   
-         <div class="page">
-            Summer Beats
-         </div>
-</div>
+  <!-- Conteúdo Principal -->
+  <main id="main-content">
 
-
-<div class ="bota-tudo"> 
-  <div class="bloco">
-
-           <p id="primeira">
-                 <strong>Summer Beats Festival</strong> é o maior evento de música universitário do mundo,
-                reunindo os melhores artistas em um único palco. <br>
-                Voltado ao público jovem universitário, o festival celebra a diversidade musical
-                com shows de rock, pop, eletrônica, rap e MPB.
-            </p>
- </div>
- 
-   <div class="texto-2">
-  <div class="bloco">
-          
-            <p id="segunda">
-                <strong>Summer Beats Festival</strong> Em 2026, o festival acontece nos dias 15, 16 e 17 de janeiro, no Campus Universitário
-                Central, com capacidade para mais de 50 mil pessoas por dia. <br>
-                Prepare-se para três dias inesquecíveis de música, arte e cultura!
-            </p>
-   </div>
-          </div>
-</div>
-     
-
-    <img class="foto-evento" src="./img/Camping.png" alt="evento-2019-summer-bets">
-         
-    <div class="topicos"> 
-             
-                  <div class="blocos1">
-                  <p>Mais de 30 atrações internacionais em 3 palcos simultâneos</li>
-                  </div>  
-                
-                    <div class="blocos2">
-                    <p>Área exclusiva de camping gratuito para estudantes com carteirinha</li>
-                    </div>  
-                  
-                    <div class="blocos3">
-                    <p>Food trucks com opções gastronômicas de todas as regiões do Brasil</li>
-                    </div>   
-                    
-                    <div class="blocos4">
-                    <p>Espaço cultural com exposições de arte, feira de discos e oficinas musicais</li>
-                    </div>
-                 
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-glow-sphere"></div>
+      <div class="container">
+        <div class="hero-badge">
+          <i class="ph-fill ph-calendar-star"></i>
+          <span>15, 16 e 17 de Janeiro de 2026 • Campus Universitário Central</span>
         </div>
 
-<div class="bota-tudo-video"> 
-        <iframe id="iframeid"
-            width="560" 
-            height="315" 
-            src="./img/final.mp4" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
+        <h1 class="hero-title">
+          O MAIOR FESTIVAL <br>
+          <span class="text-gradient">UNIVERSITÁRIO</span> DO PAÍS
+        </h1>
 
-      <div class="titulo-evento"> 
-     <h4>
-      Ultimo evento por summer beats
-    </h4>
-  </div>
-</div>
-   
-   <div class="Contatos-balão">
-    
-    <a href="./contatos.html">
-    contato
-    </a> 
- 
-     
-   </div>
+        <p class="hero-description">
+          Três dias inesquecíveis celebrando a música, arte e diversidade cultural. Shows de Rock, Pop, Eletrônica, Rap e MPB reunindo os maiores artistas e a energia mais vibrante do público jovem.
+        </p>
 
+        <div class="hero-actions">
+          <a href="./compra.html" class="btn-primary">
+            <i class="ph-bold ph-ticket"></i> Garantir Meu Ingresso
+          </a>
+          <a href="./galeria.html" class="btn-secondary">
+            <i class="ph-bold ph-play"></i> Ver Galeria & Aftermovie
+          </a>
+        </div>
 
-  <div class="footer"> 
-        <footer>
-        <p>Email: contato@summerbeatsfestival.com.br</p>
-        <p>Telefone: (11) 98765-4321</p>
-        <p>&copy; 2026 Summer Beats Festival. Todos os direitos reservados.</p>
-        </footer>
+        <!-- CONTADOR REGRESSIVO EM TEMPO REAL -->
+        <div class="countdown-container" aria-label="Contagem regressiva para o festival">
+          <div class="countdown-box">
+            <span class="countdown-value" id="countdownDays">00</span>
+            <span class="countdown-label">Dias</span>
+          </div>
+          <span class="countdown-divider">:</span>
+          <div class="countdown-box">
+            <span class="countdown-value" id="countdownHours">00</span>
+            <span class="countdown-label">Horas</span>
+          </div>
+          <span class="countdown-divider">:</span>
+          <div class="countdown-box">
+            <span class="countdown-value" id="countdownMinutes">00</span>
+            <span class="countdown-label">Min</span>
+          </div>
+          <span class="countdown-divider">:</span>
+          <div class="countdown-box">
+            <span class="countdown-value" id="countdownSeconds">00</span>
+            <span class="countdown-label">Seg</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS HIGHLIGHTS BAR -->
+    <section class="container stats-bar">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="ph ph-microphone-stage"></i>
+          </div>
+          <div class="stat-details">
+            <span class="stat-number">+30 Shows</span>
+            <span class="stat-label">Atrações nacionais & internacionais</span>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="ph ph-speaker-high"></i>
+          </div>
+          <div class="stat-details">
+            <span class="stat-number">3 Palcos</span>
+            <span class="stat-label">Com transmissão simultânea</span>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="ph ph-users-three"></i>
+          </div>
+          <div class="stat-details">
+            <span class="stat-number">+50 Mil</span>
+            <span class="stat-label">Pessoas por dia de festival</span>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="ph ph-tent"></i>
+          </div>
+          <div class="stat-details">
+            <span class="stat-number">Camping Free</span>
+            <span class="stat-label">Exclusivo para estudantes com RE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: EXPERIÊNCIA DO FESTIVAL -->
+    <section class="experience-section" id="experiencia">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">A Experiência</span>
+          <h2 class="section-title">Muito Mais que Apenas Música</h2>
+          <p class="section-subtitle">
+            O Summer Beats foi planejado para entregar infraestrutura de padrão internacional, segurança e entretenimento completo em cada detalhe.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Card 1: Palco Principal -->
+          <article class="experience-card">
+            <div class="experience-img-wrap">
+              <span class="card-badge">Megaestrutura</span>
+              <img src="./img/palco-principal.png" alt="Palco Principal do Summer Beats Festival" class="experience-img" loading="lazy">
+            </div>
+            <div class="experience-body">
+              <h3 class="experience-title">Palco Principal Summer Beats</h3>
+              <p class="experience-text">
+                Iluminação de última geração, painéis de LED 4K e som cristalino imersivo. Grandes bandas de rock, pop e headliners mundiais reunidos para noites históricas.
+              </p>
+              <a href="./galeria.html" class="experience-link">
+                Ver fotos e apresentações <i class="ph-bold ph-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Camping Universitário -->
+          <article class="experience-card">
+            <div class="experience-img-wrap">
+              <span class="card-badge">Exclusivo Alunos</span>
+              <img src="./img/Camping.png" alt="Área de camping universitário oficial" class="experience-img" loading="lazy">
+            </div>
+            <div class="experience-body">
+              <h3 class="experience-title">Camping Universitário Oficial</h3>
+              <p class="experience-text">
+                Área arborizada exclusiva, banheiros estruturados com chuveiros quentes, estações de recarga de celular e segurança 24h. Totalmente grátis com carteirinha estudantil.
+              </p>
+              <a href="./compra.html" class="experience-link">
+                Reservar vaga no camping <i class="ph-bold ph-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Gastronomia -->
+          <article class="experience-card">
+            <div class="experience-img-wrap">
+              <span class="card-badge">Food Park 24h</span>
+              <img src="./img/foodtrucks.png" alt="Food Trucks no festival" class="experience-img" loading="lazy">
+            </div>
+            <div class="experience-body">
+              <h3 class="experience-title">Praça Gastronômica & Food Trucks</h3>
+              <p class="experience-text">
+                Mais de 25 opções culinárias com delícias de todas as regiões do Brasil, hambúrgueres artesanais, opções veganas, cafés e sobremesas com preços acessíveis.
+              </p>
+              <a href="./galeria.html" class="experience-link">
+                Explorar opções de alimentação <i class="ph-bold ph-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Espaço Cultural -->
+          <article class="experience-card">
+            <div class="experience-img-wrap">
+              <span class="card-badge">Arte & Oficinas</span>
+              <img src="./img/espaco-cultural.jpg" alt="Espaço cultural com feira de vinil" class="experience-img" loading="lazy">
+            </div>
+            <div class="experience-body">
+              <h3 class="experience-title">Espaço Cultural & Feira de Discos</h3>
+              <p class="experience-text">
+                Exposições de artes visuais por estudantes, feira de vinis raros, workshops de produção musical, live painting e intervenções teatrais durante todo o dia.
+              </p>
+              <a href="./galeria.html" class="experience-link">
+                Conhecer a feira cultural <i class="ph-bold ph-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: VÍDEO OFICIAL / AFTERMOVIE -->
+    <section class="video-section">
+      <div class="container">
+        <div class="video-wrapper-card">
+          <div class="video-player-box">
+            <video controls preload="metadata" poster="./img/palco-principal.png" aria-label="Aftermovie oficial da edição anterior do Summer Beats Festival">
+              <source src="./img/final.mp4" type="video/mp4">
+              Seu navegador não suporta a tag de vídeo HTML5.
+            </video>
+          </div>
+
+          <div class="video-info-content">
+            <span class="video-tag">Aftermovie Oficial</span>
+            <h2 class="video-headline">Sinta a Energia da Edição Anterior</h2>
+            <p class="video-desc">
+              Mais de 150 mil vozes cantando juntas no Campus Central. Assista aos melhores momentos da última edição e prepare-se para viver a maior festa da sua vida universitária.
+            </p>
+
+            <ul class="video-highlights-list">
+              <li>
+                <i class="ph-fill ph-check-circle"></i>
+                <span>Som cristalino e efeitos pirotécnicos profissionais</span>
+              </li>
+              <li>
+                <i class="ph-fill ph-check-circle"></i>
+                <span>Encontro das principais atléticas e universidades</span>
+              </li>
+              <li>
+                <i class="ph-fill ph-check-circle"></i>
+                <span>3 dias completos de imersão e novas amizades</span>
+              </li>
+            </ul>
+
+            <div>
+              <a href="./compra.html" class="btn-primary">
+                <i class="ph-bold ph-ticket"></i> Comprar Ingressos 2026
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: PALCOS TEMÁTICOS -->
+    <section class="lineup-preview-section" id="palcos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Line-up & Estrutura</span>
+          <h2 class="section-title">3 Palcos, Infinitas Emoções</h2>
+          <p class="section-subtitle">
+            Uma curadoria musical plural para agradar a todos os gostos do amanhecer até o encerramento.
+          </p>
+        </div>
+
+        <div class="stages-grid">
+          <div class="stage-card stage-main">
+            <div class="stage-icon">
+              <i class="ph ph-guitar"></i>
+            </div>
+            <h3 class="stage-name">Palco Beats Main</h3>
+            <span class="stage-genre">Rock • Indie • Pop Headliners</span>
+            <p class="stage-artists">
+              O coração pulsante do festival com as maiores bandas nacionais e internacionais em apresentações completas e memoráveis.
+            </p>
+          </div>
+
+          <div class="stage-card stage-electronic">
+            <div class="stage-icon">
+              <i class="ph ph-disc"></i>
+            </div>
+            <h3 class="stage-name">Tenda Eletro Beats</h3>
+            <span class="stage-genre">EDM • House • Techno • Bass</span>
+            <p class="stage-artists">
+              Pista coberta com DJs renomados, sound system de alta pressão e iluminação laser para não deixar ninguém parado a noite toda.
+            </p>
+          </div>
+
+          <div class="stage-card stage-university">
+            <div class="stage-icon">
+              <i class="ph ph-music-notes"></i>
+            </div>
+            <h3 class="stage-name">Espaço Universitário</h3>
+            <span class="stage-genre">Rap • Funk • Trap • MPB & Bandas Acadêmicas</span>
+            <p class="stage-artists">
+              O espaço onde novos talentos acadêmicos e os maiores nomes do ritmo urbano e MPB comandam as tardes do festival.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-card">
+          <h2 class="cta-banner-title">Os ingressos do 1º lote já estão disponíveis!</h2>
+          <p class="cta-banner-desc">
+            Garanta sua presença com valores promocionais e acesso antecipado ao Camping Universitário oficial antes que o lote vire.
+          </p>
+          <a href="./compra.html" class="btn-primary">
+            <i class="ph-bold ph-ticket"></i> Comprar Meu Ingresso Agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ COMPLETO UNIFICADO -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col-brand">
+        <a href="./index.html" class="brand-logo">
+          <div class="logo-icon-wrapper">
+            <img src="./img/party.png" alt="Logo Summer Beats">
+          </div>
+          <div class="brand-info">
+            <span class="brand-name">SUMMER BEATS</span>
+            <span class="brand-tagline">Festival 2026</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          O maior evento de celebração da música e da cultura universitária. Três dias inesquecíveis de energia e diversidade.
+        </p>
+        <div class="footer-socials">
+          <a href="./contatos.html" class="social-btn" aria-label="Instagram Summer Beats"><i class="ph-bold ph-instagram-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="WhatsApp Atendimento"><i class="ph-bold ph-whatsapp-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="Facebook Oficial"><i class="ph-bold ph-facebook-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="TikTok Oficial"><i class="ph-bold ph-tiktok-logo"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navegação Rápida</h4>
+        <ul class="footer-links">
+          <li><a href="./index.html"><i class="ph ph-caret-right"></i> Página Inicial</a></li>
+          <li><a href="./compra.html"><i class="ph ph-caret-right"></i> Compra de Ingressos</a></li>
+          <li><a href="./galeria.html"><i class="ph ph-caret-right"></i> Galeria Multimídia</a></li>
+          <li><a href="./contatos.html"><i class="ph ph-caret-right"></i> Fale Conosco / Suporte</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Informações Úteis</h4>
+        <ul class="footer-links">
+          <li><a href="./compra.html#regras"><i class="ph ph-caret-right"></i> Meia-Entrada Estudantil</a></li>
+          <li><a href="./index.html#experiencia"><i class="ph ph-caret-right"></i> Guia do Camping</a></li>
+          <li><a href="./contatos.html#faq"><i class="ph ph-caret-right"></i> Dúvidas Frequentes (FAQ)</a></li>
+          <li><a href="./contatos.html"><i class="ph ph-caret-right"></i> Credenciamento de Imprensa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4 class="footer-heading">Fique por Dentro</h4>
+        <p>Receba em primeira mão anúncios de novos artistas, horários dos shows e benefícios exclusivos.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Obrigado! Seu e-mail foi cadastrado com sucesso para receber as novidades do festival.'); this.reset();">
+          <input type="email" placeholder="Seu melhor e-mail" class="newsletter-input" required>
+          <button type="submit" class="newsletter-btn" aria-label="Inscrever-se">
+            <i class="ph-bold ph-paper-plane-tilt"></i>
+          </button>
+        </form>
+      </div>
     </div>
 
+    <div class="footer-bottom">
+      <p>&copy; 2026 Summer Beats Festival. Todos os direitos reservados. CNPJ: 12.345.678/0001-90.</p>
+      <div class="footer-bottom-links">
+        <a href="./contatos.html">Termos de Uso</a>
+        <a href="./contatos.html">Privacidade</a>
+        <a href="./contatos.html">Classificação 18+</a>
+      </div>
+    </div>
+  </footer>
 
-    </body>
-    </html>
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,141 +1,432 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Beats Festival - Compra</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
-<link rel="stylesheet" href="./css/footerNav.css">
-   <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/compra.css">
-    <link rel="icon" href="./img/party.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Garanta seu ingresso para o Summer Beats Festival 2026. Ingressos diários, passaporte VIP e camping universitário gratuito. Compra 100% segura.">
+  <title>Ingressos & Bilheteria | Summer Beats Festival 2026</title>
+
+  <!-- Google Fonts & Phosphor Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css">
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="./css/footerNav.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/compra.css">
+  <link rel="icon" type="image/png" href="./img/party.png">
 </head>
 <body>
 
-    
+  <!-- Acessibilidade -->
+  <a href="#main-content" class="skip-link">Pular para o formulário de ingressos</a>
 
-<header> 
-   
-    <nav class="nav-items">
-        <a href="./index.html" class="Nav"> Pagina Inicial</a>
-        <a href="./galeria.html" class="Nav"> Galeria </a>
-    </nav> 
-</header>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="./index.html" class="brand-logo" aria-label="Summer Beats Festival Home">
+        <div class="logo-icon-wrapper">
+          <img src="./img/party.png" alt="Ícone Summer Beats">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">SUMMER BEATS</span>
+          <span class="brand-tagline">Festival 2026</span>
+        </div>
+      </a>
 
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Navegação Principal">
+        <a href="./index.html" class="nav-link">
+          <i class="ph ph-house"></i> Início
+        </a>
+        <a href="./index.html#experiencia" class="nav-link">
+          <i class="ph ph-sparkle"></i> O Festival
+        </a>
+        <a href="./index.html#palcos" class="nav-link">
+          <i class="ph ph-waveform"></i> Palcos
+        </a>
+        <a href="./galeria.html" class="nav-link">
+          <i class="ph ph-image"></i> Galeria
+        </a>
+        <a href="./contatos.html" class="nav-link">
+          <i class="ph ph-envelope"></i> Contato
+        </a>
+        <a href="./compra.html" class="nav-cta-btn">
+          <i class="ph-bold ph-ticket"></i> Ingressos
+        </a>
+      </nav>
 
-<div class="nave-compra">
- <span class="inicio"> Pagina inicial</span>
-  <span class="icone-seta"> <i class="ph ph-caret-right"></i>  </span>
- <span class="compra">compra ingresso</span>
-</div>
+      <!-- Botão Hambúrguer Mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+        <i class="ph-bold ph-list"></i>
+      </button>
+    </div>
+  </header>
 
-
-<div class="container-tabela">  
-<table class="tabela-ingresso">
-    <thead class="head-tabela">            
-        <tr> 
-            <th class="head-tabelas">Item</th>
-            <th class="head-tabelas">Descrição</th>
-            <th class="head-tabelas">Duração/Data</th>
-            <th class="head-tabelas">Valor/Investimento</th>
-        </tr>
-    </thead>
-    <tbody class="body-tabela">
-        <tr class="informacao-tabela">
-           
-            <td class="informacao-tabelas">Ingresso Diário</td>
-            <td class="informacao-tabelas">Acesso a um único dia de festival com todos os palcos e áreas comuns</td>
-            <td class="informacao-tabelas">1 dia</td>
-            <td class="informacao-tabelas">R$ 150,00</td>
-        </tr>
-        <tr class="informacao-tabela">
-            
-            <td class="informacao-tabelas">Passaporte 3 Dias</td>
-            <td class="informacao-tabelas">Acesso completo aos três dias de evento, com direito a área VIP</td>
-            <td class="informacao-tabelas">3 dias (15 a 17/01/2026)</td>
-            <td class="informacao-tabelas">R$ 350,00</td>
-        </tr>
-        <tr class="informacao-tabela">
-         
-            <td class="informacao-tabelas">Camping Universitário</td>
-            <td class="informacao-tabelas">Área de camping exclusiva para estudantes com banheiros e chuveiros</td>
-            <td class="informacao-tabelas">3 dias (15 a 17/01/2026)</td>
-            <td class="informacao-tabelas">Gratuito com carteirinha</td>
-        </tr>
-    </tbody>
-</table>
-
-
- <section class="formulario">
-  <h2 class="Titulo-compra"> Compre seu ingresso</h2> 
-  <div class="formularios"> 
-            <div> 
-              <form action="./Compra.html" >
-                <label for="Name"> NOME: </label>  
-                <input type="text"
-                id="Name"
-                placeholder="Informe seu nome">
-            </div>
-           
-            <div> 
-                <label for=" RE"> RE: </label>
-                <input type="Text"
-                id="RE"
-                placeholder="Se for aluno">
-           </div>
-          
-             <div> 
-                   <label for="e-mail"> E-mail: </label>
-                   <input type="text"
-                   id="e-mail"
-                    required
-                    placeholder="Informe um e-mail">
-                  </div>
-             <div> 
-
-            <label for="Idade" > IDADE: </label>  
-              <input type="number"
-               id="Idade"
-               placeholder=" Informe sua idade"
-               min="18"
-               required>
-             </div>
-
-
-            <label for="plano"> PLANO DESEJADO: </label>
-            <select name="plano" id="plano">
-            <option value="Informe"> Informe uma opção</option>
-            <option value="Diario"> Diario - Valor: R$ 150,00 </option>
-            <option value=" PASSAPORTE"> Passaporte - 3 Dias - Valor: R$ 350,00 </option>
-            <option value="Universitário"> Universitário - 3 Dias -  Gratuito + Beneficios </option>
-             </select> 
-             <div class="botoes"> 
-            <input class="botao" type="submit" value="Enviar">
-            <input class="botao2" type="submit" value="Cancelar">
-            </div>  
-
-     </form>    
-
- </section>
-</div>
-</div>
-
-<div class="card-gif"> 
- <div class="container-gif">
-    <img class="bebe-dancando" src="./img/ba89333a6dcd841a1e277e7704ca6e2d1-ezgif.com-remove-background.gif" alt="simbolo">
-    <img class="bebe-dancando2" src="./img/ba89333a6dcd841a1e277e7704ca6e2d1-ezgif.com-remove-background.gif" alt="simbolo">
-    <img class="bebe-dancando2" src="./img/ba89333a6dcd841a1e277e7704ca6e2d1-ezgif.com-remove-background.gif" alt="simbolo">
- </div>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <a href="./index.html"><i class="ph ph-house"></i> Início</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">Ingressos & Bilheteria</span>
   </div>
 
-  <div class="footer"> 
-        <footer>
-        <p>Email: contato@summerbeatsfestival.com.br</p>
-        <p>Telefone: (11) 98765-4321</p>
-        <p>&copy; 2026 Summer Beats Festival. Todos os direitos reservados.</p>
-        </footer>
+  <!-- Conteúdo Principal -->
+  <main id="main-content" class="container">
+
+    <!-- CABEÇALHO DA PÁGINA -->
+    <div class="page-header">
+      <span class="section-eyebrow">Bilheteria Oficial 2026</span>
+      <h1 class="section-title">Escolha Seu Ingresso</h1>
+      <p class="section-subtitle">
+        Garanta seu lugar no maior festival universitário do país. 1º Lote com valores promocionais e opções exclusivas para estudantes.
+      </p>
     </div>
 
+    <!-- CARDS DE PLANOS / INGRESSOS -->
+    <section class="tickets-grid" aria-label="Opções de Ingressos">
+      
+      <!-- Card 1: Ingresso Diário -->
+      <div class="ticket-card ticket-select-card" data-plan="diario" tabindex="0" role="button" aria-label="Selecionar Ingresso Diário">
+        <div class="ticket-card-header">
+          <h2 class="ticket-plan-name">Ingresso Diário</h2>
+          <p class="ticket-plan-desc">Acesso individual para o dia de sua escolha no festival.</p>
+        </div>
+
+        <div class="ticket-price-box">
+          <span class="ticket-price-currency">R$</span>
+          <span class="ticket-price-val">150</span>
+          <span class="ticket-price-period">Por dia de festival</span>
+        </div>
+
+        <ul class="ticket-features">
+          <li><i class="ph-fill ph-check-circle"></i> Acesso a todos os 3 palcos do evento</li>
+          <li><i class="ph-fill ph-check-circle"></i> Entrada na Praça Gastronômica e Feira Cultural</li>
+          <li><i class="ph-fill ph-check-circle"></i> Pulseira cashless recarregável</li>
+          <li><i class="ph-fill ph-check-circle"></i> Copo oficial colecionável do evento</li>
+        </ul>
+
+        <button type="button" class="btn-select-tier">Selecionar Este Plano</button>
+      </div>
+
+      <!-- Card 2: Passaporte 3 Dias VIP (Destaque) -->
+      <div class="ticket-card ticket-select-card featured selected" data-plan="passaporte" tabindex="0" role="button" aria-label="Selecionar Passaporte 3 Dias VIP">
+        <span class="ticket-popular-badge">Mais Escolhido • VIP</span>
+        <div class="ticket-card-header">
+          <h2 class="ticket-plan-name">Passaporte 3 Dias</h2>
+          <p class="ticket-plan-desc">A experiência máxima com acesso irrestrito aos três dias.</p>
+        </div>
+
+        <div class="ticket-price-box">
+          <span class="ticket-price-currency">R$</span>
+          <span class="ticket-price-val">350</span>
+          <span class="ticket-price-period">Acesso total (15 a 17/01/2026)</span>
+        </div>
+
+        <ul class="ticket-features">
+          <li><i class="ph-fill ph-check-circle"></i> <strong>Acesso total aos 3 dias de festival</strong></li>
+          <li><i class="ph-fill ph-check-circle"></i> Entrada VIP sem filas nos portões</li>
+          <li><i class="ph-fill ph-check-circle"></i> Acesso ao Lounge VIP com vista elevada dos palcos</li>
+          <li><i class="ph-fill ph-check-circle"></i> Bares, banheiros e estações de descanso privativas</li>
+          <li><i class="ph-fill ph-check-circle"></i> Kit Summer Beats exclusivo (camisa + tirante + copo)</li>
+        </ul>
+
+        <button type="button" class="btn-select-tier">Plano Selecionado</button>
+      </div>
+
+      <!-- Card 3: Camping Universitário -->
+      <div class="ticket-card ticket-select-card" data-plan="universitario" tabindex="0" role="button" aria-label="Selecionar Camping Universitário Gratuito">
+        <div class="ticket-card-header">
+          <h2 class="ticket-plan-name">Camping Universitário</h2>
+          <p class="ticket-plan-desc">Exclusivo para estudantes universitários com RE ativo.</p>
+        </div>
+
+        <div class="ticket-price-box">
+          <span class="ticket-price-currency">R$</span>
+          <span class="ticket-price-val">0</span>
+          <span class="ticket-price-period">Gratuito com Carteirinha</span>
+        </div>
+
+        <ul class="ticket-features">
+          <li><i class="ph-fill ph-check-circle"></i> <strong>3 dias de hospedagem no camping oficial</strong></li>
+          <li><i class="ph-fill ph-check-circle"></i> Estrutura com banheiros e chuveiros quentes 24h</li>
+          <li><i class="ph-fill ph-check-circle"></i> Pontos de recarga de celular monitorados</li>
+          <li><i class="ph-fill ph-check-circle"></i> Segurança dedicada e posto médico 24 horas</li>
+          <li><i class="ph-fill ph-check-circle"></i> Necessário comprovar matrícula na entrada</li>
+        </ul>
+
+        <button type="button" class="btn-select-tier">Selecionar Este Plano</button>
+      </div>
+
+    </section>
+
+    <!-- SEÇÃO DE CHECKOUT & RESUMO DE COMPRA -->
+    <section class="checkout-section">
+      <div class="checkout-grid">
+
+        <!-- Coluna 1: Resumo do Pedido & Selos de Segurança -->
+        <div class="summary-card">
+          <h3 class="summary-title">
+            <i class="ph-bold ph-receipt"></i> Resumo do Pedido
+          </h3>
+
+          <div class="summary-row">
+            <span>Ingresso Selecionado:</span>
+            <strong id="summaryPlan">Passaporte Completo (3 Dias VIP)</strong>
+          </div>
+
+          <div class="summary-row">
+            <span>Valor Unitário:</span>
+            <strong id="summaryPrice">R$ 350,00</strong>
+          </div>
+
+          <div class="summary-row">
+            <span>Taxa de Emissão:</span>
+            <strong id="summaryFee">R$ 17,50</strong>
+          </div>
+
+          <div class="summary-total-row">
+            <span>Total:</span>
+            <span class="summary-total-val" id="summaryTotal">R$ 367,50</span>
+          </div>
+
+          <!-- Selos de Confiança -->
+          <div class="trust-badges">
+            <div class="trust-item">
+              <i class="ph-fill ph-shield-check"></i>
+              <span>Ambiente criptografado com SSL 256-bit</span>
+            </div>
+            <div class="trust-item">
+              <i class="ph-fill ph-envelope-simple"></i>
+              <span>Envio imediato do voucher e QR Code por e-mail</span>
+            </div>
+            <div class="trust-item">
+              <i class="ph-fill ph-arrows-clockwise"></i>
+              <span>Cancelamento garantido em até 7 dias sem taxas</span>
+            </div>
+            <div class="trust-item">
+              <i class="ph-fill ph-identification-card"></i>
+              <span>Meia-entrada válida conforme Lei Federal 12.933/13</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Formulário de Reserva / Checkout -->
+        <div class="form-card">
+          <div class="form-header">
+            <h2 class="form-title">Dados do Titular da Compra</h2>
+            <p class="form-subtitle">Preencha as informações abaixo para emitir sua credencial digital nominal.</p>
+          </div>
+
+          <form id="checkoutForm" class="checkout-form" novalidate>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="Name" class="form-label">
+                  Nome Completo <span class="required-star">*</span>
+                </label>
+                <input type="text" id="Name" name="name" class="form-input" placeholder="Ex: Higor Silva" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  E-mail para Recebimento <span class="required-star">*</span>
+                </label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="seu.email@exemplo.com" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefone" class="form-label">
+                  WhatsApp / Celular <span class="required-star">*</span>
+                </label>
+                <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(11) 98765-4321" required autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label for="Idade" class="form-label">
+                  Idade (Mínimo 18 anos) <span class="required-star">*</span>
+                </label>
+                <input type="number" id="Idade" name="idade" class="form-input" placeholder="18" min="18" max="99" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="plano" class="form-label">
+                  Tipo de Ingresso <span class="required-star">*</span>
+                </label>
+                <select name="plano" id="plano" class="form-select">
+                  <option value="diario">Ingresso Diário — R$ 150,00</option>
+                  <option value="passaporte" selected>Passaporte 3 Dias VIP — R$ 350,00</option>
+                  <option value="universitario">Camping Universitário — Gratuito (com RE)</option>
+                </select>
+              </div>
+
+              <div class="form-group" id="reContainer">
+                <label for="RE" class="form-label">
+                  RE / Matrícula Universitária (Opcional)
+                </label>
+                <input type="text" id="RE" name="re" class="form-input" placeholder="Ex: 202610489">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="ticketQuantity" class="form-label">
+                Quantidade de Ingressos
+              </label>
+              <input type="number" id="ticketQuantity" name="quantity" class="form-input" value="1" min="1" max="10">
+            </div>
+
+            <!-- Opções de Pagamento -->
+            <div class="form-group">
+              <label class="form-label">Forma de Pagamento</label>
+              <div class="payment-options-grid">
+                <label class="payment-radio-label">
+                  <input type="radio" name="payment_method" value="pix" checked>
+                  <i class="ph-bold ph-qr-code"></i>
+                  <span class="payment-method-name">PIX (Instantâneo)</span>
+                </label>
+
+                <label class="payment-radio-label">
+                  <input type="radio" name="payment_method" value="cartao">
+                  <i class="ph-bold ph-credit-card"></i>
+                  <span class="payment-method-name">Cartão em até 6x</span>
+                </label>
+
+                <label class="payment-radio-label">
+                  <input type="radio" name="payment_method" value="boleto">
+                  <i class="ph-bold ph-barcode"></i>
+                  <span class="payment-method-name">Boleto Bancário</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="form-actions">
+              <button type="submit" class="btn-checkout-submit">
+                <i class="ph-bold ph-lock-key"></i> Confirmar & Finalizar Reserva
+              </button>
+              <button type="button" class="btn-checkout-cancel" id="btnCancelOrder">
+                Limpar Campos
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL DE CONFIRMAÇÃO DE COMPRA -->
+  <div class="site-modal" id="confirmationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content-box">
+      <div class="modal-icon-circle">
+        <i class="ph-bold ph-check"></i>
+      </div>
+      <h3 class="modal-title" id="modalTitle">Reserva Confirmada com Sucesso!</h3>
+      <p class="modal-desc">
+        Parabéns, <strong id="modalCustomerName">Estudante</strong>! Seu ingresso para o <strong>Summer Beats 2026</strong> foi pré-reservado no sistema.
+      </p>
+
+      <div class="modal-order-ticket">
+        <div class="modal-ticket-row">
+          <span class="modal-ticket-label">Plano:</span>
+          <span class="modal-ticket-val" id="modalTicketPlan">Passaporte 3 Dias VIP</span>
+        </div>
+        <div class="modal-ticket-row">
+          <span class="modal-ticket-label">Código da Reserva:</span>
+          <span class="modal-ticket-val" style="color: var(--accent-cyan); font-family: monospace;">#SB2026-89421-VIP</span>
+        </div>
+        <div class="modal-ticket-row">
+          <span class="modal-ticket-label">Status:</span>
+          <span class="modal-ticket-val" style="color: #10b981;">Aguardando Check-in</span>
+        </div>
+      </div>
+
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">
+        As instruções detalhadas de acesso, voucher com QR Code e pulseira oficial foram encaminhadas para o seu e-mail cadastrado.
+      </p>
+
+      <button type="button" class="btn-primary" id="modalCloseBtn" style="width: 100%;">
+        Concluir e Voltar
+      </button>
+    </div>
+  </div>
+
+  <!-- RODAPÉ COMPLETO UNIFICADO -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col-brand">
+        <a href="./index.html" class="brand-logo">
+          <div class="logo-icon-wrapper">
+            <img src="./img/party.png" alt="Logo Summer Beats">
+          </div>
+          <div class="brand-info">
+            <span class="brand-name">SUMMER BEATS</span>
+            <span class="brand-tagline">Festival 2026</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          O maior evento de celebração da música e da cultura universitária. Três dias inesquecíveis de energia e diversidade.
+        </p>
+        <div class="footer-socials">
+          <a href="./contatos.html" class="social-btn" aria-label="Instagram"><i class="ph-bold ph-instagram-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="WhatsApp"><i class="ph-bold ph-whatsapp-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="Facebook"><i class="ph-bold ph-facebook-logo"></i></a>
+          <a href="./contatos.html" class="social-btn" aria-label="TikTok"><i class="ph-bold ph-tiktok-logo"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navegação Rápida</h4>
+        <ul class="footer-links">
+          <li><a href="./index.html"><i class="ph ph-caret-right"></i> Página Inicial</a></li>
+          <li><a href="./compra.html"><i class="ph ph-caret-right"></i> Compra de Ingressos</a></li>
+          <li><a href="./galeria.html"><i class="ph ph-caret-right"></i> Galeria Multimídia</a></li>
+          <li><a href="./contatos.html"><i class="ph ph-caret-right"></i> Fale Conosco / Suporte</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Informações Úteis</h4>
+        <ul class="footer-links">
+          <li><a href="./compra.html#regras"><i class="ph ph-caret-right"></i> Meia-Entrada Estudantil</a></li>
+          <li><a href="./index.html#experiencia"><i class="ph ph-caret-right"></i> Guia do Camping</a></li>
+          <li><a href="./contatos.html#faq"><i class="ph ph-caret-right"></i> Dúvidas Frequentes (FAQ)</a></li>
+          <li><a href="./contatos.html"><i class="ph ph-caret-right"></i> Credenciamento de Imprensa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4 class="footer-heading">Fique por Dentro</h4>
+        <p>Cadastre seu e-mail para receber alertas de virada de lote e novidades do line-up.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('E-mail cadastrado com sucesso!'); this.reset();">
+          <input type="email" placeholder="Seu e-mail" class="newsletter-input" required>
+          <button type="submit" class="newsletter-btn" aria-label="Inscrever-se">
+            <i class="ph-bold ph-paper-plane-tilt"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Summer Beats Festival. Todos os direitos reservados. CNPJ: 12.345.678/0001-90.</p>
+      <div class="footer-bottom-links">
+        <a href="./contatos.html">Termos de Uso</a>
+        <a href="./contatos.html">Privacidade</a>
+        <a href="./contatos.html">Classificação 18+</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
 </body>
 </html>
